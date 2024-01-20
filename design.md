@@ -19,3 +19,8 @@ success: #30DF45
 
 background: #010104
 text: #eae9fc
+
+# Fonts and Type Scale
+
+Poppins
+Perfect Fourth (1.333)
