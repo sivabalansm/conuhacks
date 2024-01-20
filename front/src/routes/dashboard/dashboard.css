@@ -66,19 +66,19 @@ h1 {
 
 
 #daily-upcoming-schedules {
-
-}
-
-#daily-possible-profit {
-
+  width:70%;
 }
 
 #daily-customers-done-ratio {
+  width: 30%;
+}
 
+#daily-possible-profit {
+  width: 70%;
 }
 
 #daily-customers-rejected {
-  
+  width: 30%;
 }
 
 .dashboard-row {
