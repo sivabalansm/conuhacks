@@ -1,9 +1,20 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("../../assets/Poppins-Regular.ttf");
+#daily-upcoming-schedules {
+  width:70%;
 }
 
-body {
-  margin: 0px;
-  font-family: 'Poppins', sans-serif;
+#daily-customers-done-ratio {
+  width: 30%;
+}
+
+#daily-possible-profit {
+  width: 70%;
+}
+
+#daily-customers-rejected {
+  width: 30%;
+}
+
+.dashboard-row {
+  display: flex;
+  height: 40vh;
 }
