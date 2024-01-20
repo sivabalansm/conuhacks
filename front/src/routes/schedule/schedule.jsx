@@ -1,8 +1,8 @@
 import _ from 'lodash'
 import { useMatch, useNavigate } from 'react-router-dom'
 
-import Row from './row'
-import Car from './car'
+import Row from './Row'
+import Car from './Car'
 import './schedule.css'
 
 const Schedule = () => {
