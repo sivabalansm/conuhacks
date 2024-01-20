@@ -3,8 +3,8 @@ import {
   Routes, Route
 } from 'react-router-dom'
 
-import Schedule from './routes/schedule/schedule'
-import Info from './routes/Info'
+import Schedule from './routes/schedule/Schedule'
+import Info from './routes/info/Info'
 
 function App() {
   return (
