@@ -1,6 +1,6 @@
 import {
   BrowserRouter as Router,
-  Routes, Route, Link
+  Routes, Route
 } from 'react-router-dom'
 
 import Schedule from './routes/schedule/schedule'
@@ -10,6 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path='/schedule/:date' element={<Schedule />} />
         <Route path='/schedule' element={<Schedule />} />
         <Route path='/' element={<Info />} />
       </Routes>
