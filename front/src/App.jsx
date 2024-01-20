@@ -1,8 +1,19 @@
+import {
+  BrowserRouter as Router,
+  Routes, Route, Link
+} from 'react-router-dom'
+
+import Schedule from './routes/schedule/schedule'
+import Info from './routes/Info'
+
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/schedule' element={<Schedule />} />
+        <Route path='/' element={<Info />} />
+      </Routes>
+    </Router>
   )
 }
 
