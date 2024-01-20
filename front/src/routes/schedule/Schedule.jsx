@@ -4,6 +4,7 @@ import { useMatch, useNavigate } from 'react-router-dom'
 import Row from './Row'
 import Car from './Car'
 import './schedule.css'
+import '../../global.css'
 
 const Schedule = () => {
   const navigate = useNavigate()

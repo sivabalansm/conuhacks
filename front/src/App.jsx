@@ -14,7 +14,7 @@ function App() {
         <Route path='/schedule/:date' element={<Schedule />} />
         <Route path='/schedule' element={<Schedule />} />
         <Route path='/' element={<Dashboard />} />
-        <Route path='/' element = {<Analytics/>}/>
+        <Route path='/analytics' element={<Analytics />}/>
       </Routes>
     </Router>
   )
