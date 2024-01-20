@@ -1,8 +1,8 @@
-const Row = ({ time }) => {
-  const startTime = Math.floor(time) + ':' + ((time - Math.floor(time)) * 60)
-  let endTime = time + 0.5
-  endTime = Math.floor(endTime) + ':' + ((endTime - Math.floor(endTime)) * 60 - 10).toString().padStart(2, '0')
+import _ from 'lodash'
 
+const Row = ({ time }) => {
+  const startTime = time + ':00'
+  const endTime = time + ':30'
 
   return (
     <tr className='schedule_row'>
@@ -11,11 +11,7 @@ const Row = ({ time }) => {
         <br />
         {endTime}
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      {_.range(10).map(n => <td></td>)}
     </tr>
   )
 }

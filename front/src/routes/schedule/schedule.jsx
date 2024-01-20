@@ -1,31 +1,24 @@
+import _ from 'lodash'
+
 import Row from './row'
 import Car from './car'
 import './schedule.css'
 
 const Schedule = () => {
-  let times = []
-
-  for (let i=8; i < 18; i += 0.5) {
-    times.push(i + 0.25)
-  }
+  const times  = _.range(7, 19)
 
   const cars = [
   ]
 
-
   return (
     <>
-      <h2>Possible Schedules</h2>
+      <h2 className='subheader'>Possible Schedules</h2>
       <div className='schedule'>
         <table className='schedule_base'>
           <thead>
             <tr className='schedule_header'>
               <th></th>
-              <th>Monday</th>
-              <th>Tuesday</th>
-              <th>Wednesday</th>
-              <th>Thursday</th>
-              <th>Friday</th>
+              {_.range(1, 11).map(num => <th key={num}>Bay {num}</th>)}
             </tr>
           </thead>
           <tbody>
