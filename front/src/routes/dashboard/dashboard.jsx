@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
-import './info.css'
+import './dashboard.css'
 
-const Info = () => {
+const Dashboard = () => {
     return (
         <>
             <div>Hi</div>
             
             <div className = "sidebar">
-                <Link to='/info'>Dashboard</Link>
+                <Link to='/dashboard'>Dashboard</Link>
                 <Link to='/schedule'>Schedule</Link>
                 <Link to='/analytics'>Analytics</Link>
             </div>
@@ -15,4 +15,4 @@ const Info = () => {
     )
 }
 
-export default Info
+export default Dashboard

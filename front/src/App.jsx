@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom'
 
 import Schedule from './routes/schedule/Schedule'
-import Info from './routes/info/Info'
+import Dashboard from './routes/dashboard/dashboard'
 import Analytics from './routes/analytics/analytics'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path='/schedule/:date' element={<Schedule />} />
         <Route path='/schedule' element={<Schedule />} />
-        <Route path='/' element={<Info />} />
+        <Route path='/' element={<Dashboard />} />
         <Route path='/' element = {<Analytics/>}/>
       </Routes>
     </Router>
