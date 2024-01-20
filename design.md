@@ -1,15 +1,21 @@
 # Colors
 
-background: 
+background: #fbfbfe
 
-text:
+text: #040316
 
-primary:
+primary: #3c6dff
 
-secondary:
+secondary: #b3b7f6
 
-accent:
+accent: #d79435
 
-error:
+error: #DB3E3E
 
-success:
+success: #30DF45
+
+
+# Sidebar colors, or dark mode
+
+background: #010104
+text: #eae9fc
