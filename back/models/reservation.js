@@ -22,6 +22,7 @@ const reservationSchema = new mongoose.Schema({
 reservationSchema.set('toJSON', {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString()
+    returnedObject.date = returnedObject.date.date
     delete returnedObject._id
     delete returnedObject.__v
   }

@@ -5,15 +5,17 @@ const dateSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  reservations: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Reservation'
-  }
+  reservations: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Reservation'
+    }
+  ]
 })
 
 dateSchema.set('toJSON', {
   transform: (document, returnedObject) => {
-    returnedObject.id = returnedObject.date
+    returnedObject.id = returnedObject._id
     delete returnedObject._id
     delete returnedObject.__v
   }

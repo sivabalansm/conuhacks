@@ -6,6 +6,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 
 const reservationRouter = require('./controllers/reservation')
+const dateRouter = require('./controllers/date')
 
 const middleware = require('./utils/middleware')
 const logger = require('./utils/logger')
@@ -27,6 +28,7 @@ app.use(express.static('build'))
 app.use(express.json())
 
 app.use('/api/reservation', reservationRouter)
+app.use('/api/date', dateRouter)
 
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)

@@ -1,13 +1,13 @@
-const datesRouter = require('express').Router()
+const dateRouter = require('express').Router()
 const Date = require('../models/date')
 
-datesRouter.get('/', async (request, response) => {
+dateRouter.get('/', async (request, response) => {
   const dates = await Date
-    .find({}).populate('reservation')
+    .find({}).populate('reservations')
   response.json(dates)
 })
 
-datesRouter.post('/', async (request, response) => {
+dateRouter.post('/', async (request, response) => {
   console.log(request.body)
   const content = request.body
   
@@ -22,4 +22,4 @@ datesRouter.post('/', async (request, response) => {
   response.status(201).json(result)
 })
 
-module.exports = datesRouter
+module.exports = dateRouter
