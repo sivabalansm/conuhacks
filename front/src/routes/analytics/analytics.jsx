@@ -1,15 +1,13 @@
 import { Link } from 'react-router-dom'
-import './info.css'
+import './analytics.css'
 
-const Info = () => {
+const Analytics = () => {
     return (
         <>
-            <div>Hi</div>
+            <div>Analytics</div>
             
             <div className = "sidebar">
-                <Link to='/info'>Dashboard</Link>
                 <Link to='/schedule'>Schedule</Link>
-                <Link to='/analytics'>Analytics</Link>
             </div>
         </>
     )
