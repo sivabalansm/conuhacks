@@ -10,7 +10,7 @@ const Dashboard = () => {
                     <p>Repair Shop</p>
                 </div>
                 <div className='sidebar-group'>
-                    <Link className='sidebar-item' to='/dashboard'>Dashboard</Link>
+                    <Link className='sidebar-item' to='/'>Dashboard</Link>
                     <Link className='sidebar-item' to='/schedule'>Schedule</Link>
                     <Link className='sidebar-item' to='/analytics'>Analytics</Link>
                 </div>
