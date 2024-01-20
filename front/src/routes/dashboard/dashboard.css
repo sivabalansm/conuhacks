@@ -4,6 +4,9 @@
 }
 
 /* ### REUSABLE CSS START ### */
+div {
+  border: 3px red solid;
+}
 
 body {
   margin: 0px;
@@ -23,29 +26,22 @@ h1 {
 #logo {
   border: 1px blue solid;
   height: 30px;
+  margin-left: 15px;
+  margin-right: 5px; 
   filter: invert(1);
 }
 
 .sidebar-title {
-  border: 3px red solid;
-
   margin-top: 0px;
   font-size: 21px;
-  padding-left: 6px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
 
-.main-container {
-  margin-left: 15vw;
-  height: 100vh;
-  border: 3px solid red;
 }
 
 .sidebar {
   height: 100%;
-  width: 15vw;
+  width: 13vw;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -59,14 +55,56 @@ h1 {
 }
 
 .sidebar-item {
-  border: 3px red solid;
-
-  padding-left: 6px;
+  padding: 5px 0px 5px 15px;
   text-decoration: none;
   font-size: 16px;
   color: #eae9fc;
   display: block;
 }
 /* SIDEBAR END */
+/* MAIN CONTAINER */
+
+
+#daily-upcoming-schedules {
+
+}
+
+#daily-possible-profit {
+
+}
+
+#daily-customers-done-ratio {
+
+}
+
+#daily-customers-rejected {
+  
+}
+
+.dashboard-row {
+  display: flex;
+  height: 40vh;
+}
+
+.main-container {
+  margin-left: 13vw;
+  padding-left: 1vw;
+  height: 100vh;
+}
+
+.main-container-title {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+
+}
+
+.main-container-title-child {
+  border: 3px green solid;
+}
+
+.main-container-row1 {
+  display: flex;
+}
 
 /* REUSABLE CSS END */

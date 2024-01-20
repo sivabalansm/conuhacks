@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route path='/schedule/:date' element={<Schedule />} />
         <Route path='/schedule' element={<Schedule />} />
-        <Route path='/' element={<Dashboard />} />
-        <Route path='/' element = {<Analytics/>}/>
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/analytics' element={<Analytics />}/>
       </Routes>
     </Router>
   )
