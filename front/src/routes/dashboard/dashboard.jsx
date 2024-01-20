@@ -6,7 +6,8 @@ const Dashboard = () => {
         <>
             <div className = 'sidebar'>
                 <div className = 'sidebar-title'>
-                    Auto Repair Shop
+                    <img id="logo" src="../../assets/gear.svg" alt=""/>
+                    <p>Repair Shop</p>
                 </div>
                 <div className='sidebar-group'>
                     <Link className='sidebar-item' to='/dashboard'>Dashboard</Link>

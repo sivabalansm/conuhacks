@@ -3,7 +3,7 @@
   src: url("../../assets/Poppins-Regular.ttf");
 }
 
-/* REUSABLE CSS START */
+/* ### REUSABLE CSS START ### */
 
 body {
   margin: 0px;
@@ -18,14 +18,36 @@ h1 {
   font-size: 12px;
 }
 
+/* SIDEBAR */
+
+#logo {
+  border: 1px blue solid;
+  height: 30px;
+  filter: invert(1);
+}
+
+.sidebar-title {
+  border: 3px red solid;
+
+  margin-top: 0px;
+  font-size: 21px;
+  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .main-container {
   margin-left: 15vw;
+  height: 100vh;
   border: 3px solid red;
 }
 
 .sidebar {
   height: 100%;
   width: 15vw;
+  margin: 0;
+  padding: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -33,14 +55,18 @@ h1 {
   background-color: #010104;
   overflow-x: hidden;
   padding-top: 20px;
+  color: #eae9fc;
 }
 
 .sidebar-item {
-  padding: 6px 8px 6px 16px;
+  border: 3px red solid;
+
+  padding-left: 6px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #eae9fc;
   display: block;
 }
+/* SIDEBAR END */
 
 /* REUSABLE CSS END */
