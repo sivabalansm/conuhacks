@@ -1,18 +1,33 @@
 import _ from 'lodash'
+import { useMatch, useNavigate } from 'react-router-dom'
 
 import Row from './row'
 import Car from './car'
 import './schedule.css'
 
 const Schedule = () => {
-  const times  = _.range(7, 19)
+  const navigate = useNavigate()
+  const match = useMatch('schedule/:date')
 
-  const cars = [
-  ]
+  const date = match
+    ? new Date(match.params.date)
+    : new Date('2020-10-01')
+
+  const changeDay = (change) => {
+    const newDate = new Date(date.getTime() + change * 24 * 60 * 60 * 1000)
+
+    const newYear = newDate.getUTCFullYear()
+    const newMonth = newDate.getUTCMonth() + 1
+    const newDay = newDate.getUTCDate()
+
+    navigate(`/schedule/${newYear}-${newMonth}-${newDay}`)
+  }
+
+  const cars = []
 
   return (
     <>
-      <h2 className='subheader'>Possible Schedules</h2>
+      <h2 className='subheader'>Schedule of {_.slice(date.toUTCString(), 0, 16)}</h2>
       <div className='schedule'>
         <table className='schedule_base'>
           <thead>
@@ -22,11 +37,16 @@ const Schedule = () => {
             </tr>
           </thead>
           <tbody>
-            {times.map(time => <Row key={time} time={time} />)}
+            {_.range(7, 19).map(time => <Row key={time} time={time} />)}
           </tbody>
         </table>
         {cars.map(car => <Car key={car.ID} car={car} />)}
       </div>
+      <div id='buttons'>
+        <button onClick={() => changeDay(-1)}>Previous Day</button>
+        <button onClick={() => changeDay(+1)}>Next Day</button>
+      </div>
+      
     </>
   )
 }

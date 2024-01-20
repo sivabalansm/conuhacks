@@ -11,7 +11,7 @@ const Row = ({ time }) => {
         <br />
         {endTime}
       </td>
-      {_.range(10).map(n => <td></td>)}
+      {_.range(10).map(n => <td key={n}></td>)}
     </tr>
   )
 }
