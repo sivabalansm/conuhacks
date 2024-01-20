@@ -1,0 +1,182 @@
+DATE: (2022, 9, 10) CAR {'compact': 10, 'medium': 17, 'full-size': 22, 'class 2 truck': 26, 'class 1 truck': 15}
+TOTAL HOURS: 91.5
+DATE: (2022, 9, 9) CAR {'class 2 truck': 23, 'full-size': 23, 'compact': 25, 'class 1 truck': 22, 'medium': 12}
+TOTAL HOURS: 98.0
+DATE: (2022, 9, 18) CAR {'full-size': 17, 'medium': 15, 'class 2 truck': 19, 'class 1 truck': 33, 'compact': 26}
+TOTAL HOURS: 100.0
+DATE: (2022, 10, 20) CAR {'full-size': 12, 'class 2 truck': 21, 'medium': 19, 'class 1 truck': 13, 'compact': 13}
+TOTAL HOURS: 77.0
+DATE: (2022, 10, 21) CAR {'medium': 20, 'class 2 truck': 11, 'full-size': 20, 'compact': 17, 'class 1 truck': 16}
+TOTAL HOURS: 66.5
+DATE: (2022, 9, 29) CAR {'class 1 truck': 29, 'full-size': 30, 'medium': 18, 'class 2 truck': 18, 'compact': 21}
+TOTAL HOURS: 99.5
+DATE: (2022, 10, 15) CAR {'class 2 truck': 25, 'class 1 truck': 18, 'medium': 20, 'compact': 15, 'full-size': 9}
+TOTAL HOURS: 90.0
+DATE: (2022, 9, 6) CAR {'full-size': 25, 'class 2 truck': 12, 'medium': 29, 'compact': 22, 'class 1 truck': 38}
+TOTAL HOURS: 100.0
+DATE: (2022, 11, 2) CAR {'class 1 truck': 15, 'compact': 19, 'full-size': 23, 'class 2 truck': 14, 'medium': 10}
+TOTAL HOURS: 69.0
+DATE: (2022, 9, 2) CAR {'full-size': 17, 'compact': 27, 'class 2 truck': 25, 'class 1 truck': 24, 'medium': 17}
+TOTAL HOURS: 104.5
+DATE: (2022, 10, 13) CAR {'class 1 truck': 11, 'full-size': 16, 'class 2 truck': 14, 'compact': 15, 'medium': 9}
+TOTAL HOURS: 59.0
+DATE: (2022, 10, 5) CAR {'class 2 truck': 19, 'class 1 truck': 18, 'compact': 19, 'full-size': 18, 'medium': 8}
+TOTAL HOURS: 78.5
+DATE: (2022, 9, 3) CAR {'class 1 truck': 27, 'full-size': 30, 'medium': 15, 'compact': 27, 'class 2 truck': 24}
+TOTAL HOURS: 111.0
+DATE: (2022, 10, 9) CAR {'class 2 truck': 13, 'class 1 truck': 12, 'compact': 19, 'full-size': 27, 'medium': 17}
+TOTAL HOURS: 69.5
+DATE: (2022, 10, 22) CAR {'class 2 truck': 13, 'full-size': 18, 'compact': 16, 'medium': 16, 'class 1 truck': 12}
+TOTAL HOURS: 63.0
+DATE: (2022, 11, 1) CAR {'medium': 22, 'class 2 truck': 26, 'compact': 22, 'class 1 truck': 16, 'full-size': 15}
+TOTAL HOURS: 97.5
+DATE: (2022, 11, 24) CAR {'full-size': 13, 'medium': 18, 'class 1 truck': 13, 'class 2 truck': 22, 'compact': 12}
+TOTAL HOURS: 78.5
+DATE: (2022, 9, 4) CAR {'class 2 truck': 14, 'full-size': 15, 'compact': 25, 'medium': 21, 'class 1 truck': 23}
+TOTAL HOURS: 81.5
+DATE: (2022, 11, 19) CAR {'full-size': 16, 'class 1 truck': 16, 'class 2 truck': 16, 'compact': 18, 'medium': 19}
+TOTAL HOURS: 74.5
+DATE: (2022, 10, 29) CAR {'full-size': 21, 'class 2 truck': 18, 'medium': 24, 'compact': 13, 'class 1 truck': 10}
+TOTAL HOURS: 75.0
+DATE: (2022, 9, 13) CAR {'compact': 20, 'class 2 truck': 20, 'full-size': 19, 'class 1 truck': 22, 'medium': 20}
+TOTAL HOURS: 91.5
+DATE: (2022, 9, 14) CAR {'compact': 20, 'medium': 24, 'class 2 truck': 21, 'full-size': 18, 'class 1 truck': 22}
+TOTAL HOURS: 95.0
+DATE: (2022, 11, 29) CAR {'class 1 truck': 18, 'full-size': 14, 'class 2 truck': 13, 'medium': 19, 'compact': 15}
+TOTAL HOURS: 68.0
+DATE: (2022, 11, 6) CAR {'compact': 23, 'full-size': 17, 'class 1 truck': 17, 'class 2 truck': 13, 'medium': 12}
+TOTAL HOURS: 69.0
+DATE: (2022, 11, 15) CAR {'compact': 18, 'class 2 truck': 17, 'class 1 truck': 22, 'full-size': 13, 'medium': 15}
+TOTAL HOURS: 79.0
+DATE: (2022, 9, 16) CAR {'class 1 truck': 21, 'medium': 23, 'full-size': 24, 'class 2 truck': 23, 'compact': 27}
+TOTAL HOURS: 104.0
+DATE: (2022, 10, 2) CAR {'class 1 truck': 14, 'compact': 15, 'full-size': 23, 'class 2 truck': 14, 'medium': 14}
+TOTAL HOURS: 68.0
+DATE: (2022, 10, 3) CAR {'class 1 truck': 14, 'medium': 17, 'compact': 19, 'full-size': 12, 'class 2 truck': 14}
+TOTAL HOURS: 66.0
+DATE: (2022, 10, 28) CAR {'class 1 truck': 12, 'compact': 16, 'full-size': 13, 'medium': 9, 'class 2 truck': 13}
+TOTAL HOURS: 57.0
+DATE: (2022, 9, 23) CAR {'class 1 truck': 20, 'medium': 22, 'compact': 22, 'class 2 truck': 19, 'full-size': 26}
+TOTAL HOURS: 93.0
+DATE: (2022, 10, 8) CAR {'full-size': 24, 'class 2 truck': 17, 'medium': 15, 'class 1 truck': 13, 'compact': 12}
+TOTAL HOURS: 72.5
+DATE: (2022, 11, 17) CAR {'medium': 14, 'full-size': 19, 'compact': 18, 'class 2 truck': 15, 'class 1 truck': 21}
+TOTAL HOURS: 76.5
+DATE: (2022, 11, 8) CAR {'full-size': 17, 'class 1 truck': 10, 'compact': 16, 'medium': 13, 'class 2 truck': 11}
+TOTAL HOURS: 55.0
+DATE: (2022, 10, 12) CAR {'full-size': 22, 'class 1 truck': 15, 'medium': 17, 'compact': 20, 'class 2 truck': 17}
+TOTAL HOURS: 78.5
+DATE: (2022, 9, 15) CAR {'class 1 truck': 24, 'class 2 truck': 19, 'medium': 19, 'compact': 30, 'full-size': 18}
+TOTAL HOURS: 95.5
+DATE: (2022, 10, 11) CAR {'medium': 17, 'compact': 12, 'class 1 truck': 16, 'class 2 truck': 16, 'full-size': 14}
+TOTAL HOURS: 69.5
+DATE: (2022, 9, 5) CAR {'class 1 truck': 28, 'medium': 28, 'full-size': 19, 'compact': 22, 'class 2 truck': 19}
+TOTAL HOURS: 100.5
+DATE: (2022, 11, 20) CAR {'class 2 truck': 9, 'class 1 truck': 16, 'medium': 17, 'full-size': 12, 'compact': 17}
+TOTAL HOURS: 57.0
+DATE: (2022, 10, 16) CAR {'medium': 18, 'compact': 11, 'full-size': 15, 'class 2 truck': 15, 'class 1 truck': 10}
+TOTAL HOURS: 62.0
+DATE: (2022, 10, 6) CAR {'compact': 10, 'class 1 truck': 21, 'full-size': 13, 'medium': 20, 'class 2 truck': 11}
+TOTAL HOURS: 64.5
+DATE: (2022, 9, 26) CAR {'compact': 16, 'class 1 truck': 25, 'class 2 truck': 19, 'full-size': 30, 'medium': 24}
+TOTAL HOURS: 98.0
+DATE: (2022, 9, 21) CAR {'full-size': 25, 'class 1 truck': 15, 'medium': 23, 'compact': 22, 'class 2 truck': 23}
+TOTAL HOURS: 96.0
+DATE: (2022, 11, 9) CAR {'class 1 truck': 10, 'full-size': 16, 'compact': 11, 'class 2 truck': 15, 'medium': 11}
+TOTAL HOURS: 59.0
+DATE: (2022, 11, 21) CAR {'compact': 30, 'class 2 truck': 20, 'class 1 truck': 10, 'full-size': 23, 'medium': 12}
+TOTAL HOURS: 82.5
+DATE: (2022, 9, 7) CAR {'full-size': 21, 'class 1 truck': 27, 'compact': 32, 'medium': 23, 'class 2 truck': 25}
+TOTAL HOURS: 115.0
+DATE: (2022, 9, 8) CAR {'medium': 25, 'class 1 truck': 26, 'full-size': 25, 'class 2 truck': 18, 'compact': 23}
+TOTAL HOURS: 98.5
+DATE: (2022, 9, 30) CAR {'medium': 23, 'class 1 truck': 31, 'compact': 15, 'class 2 truck': 21, 'full-size': 14}
+TOTAL HOURS: 99.0
+DATE: (2022, 11, 11) CAR {'full-size': 19, 'class 1 truck': 14, 'medium': 22, 'class 2 truck': 14, 'compact': 15}
+TOTAL HOURS: 70.0
+DATE: (2022, 11, 30) CAR {'compact': 12, 'class 1 truck': 11, 'medium': 15, 'class 2 truck': 11, 'full-size': 7}
+TOTAL HOURS: 50.0
+DATE: (2022, 10, 1) CAR {'medium': 18, 'class 1 truck': 14, 'full-size': 11, 'compact': 10, 'class 2 truck': 16}
+TOTAL HOURS: 65.5
+DATE: (2022, 9, 12) CAR {'compact': 23, 'class 2 truck': 21, 'class 1 truck': 18, 'full-size': 20, 'medium': 18}
+TOTAL HOURS: 90.5
+DATE: (2022, 9, 27) CAR {'class 1 truck': 31, 'compact': 24, 'class 2 truck': 14, 'medium': 25, 'full-size': 19}
+TOTAL HOURS: 93.0
+DATE: (2022, 9, 24) CAR {'class 2 truck': 12, 'medium': 22, 'compact': 20, 'full-size': 20, 'class 1 truck': 12}
+TOTAL HOURS: 67.0
+DATE: (2022, 10, 4) CAR {'class 1 truck': 17, 'full-size': 12, 'class 2 truck': 16, 'medium': 20, 'compact': 26}
+TOTAL HOURS: 78.0
+DATE: (2022, 9, 1) CAR {'medium': 18, 'full-size': 18, 'class 1 truck': 12, 'class 2 truck': 18, 'compact': 15}
+TOTAL HOURS: 73.5
+DATE: (2022, 11, 12) CAR {'medium': 23, 'compact': 14, 'class 2 truck': 30, 'class 1 truck': 15, 'full-size': 11}
+TOTAL HOURS: 99.0
+DATE: (2022, 9, 25) CAR {'class 1 truck': 26, 'full-size': 27, 'class 2 truck': 22, 'compact': 26, 'medium': 23}
+TOTAL HOURS: 108.0
+DATE: (2022, 10, 23) CAR {'class 2 truck': 21, 'medium': 8, 'compact': 20, 'full-size': 15, 'class 1 truck': 11}
+TOTAL HOURS: 74.5
+DATE: (2022, 10, 14) CAR {'class 2 truck': 10, 'compact': 17, 'full-size': 10, 'medium': 17, 'class 1 truck': 17}
+TOTAL HOURS: 59.0
+DATE: (2022, 11, 18) CAR {'medium': 21, 'compact': 13, 'class 2 truck': 17, 'class 1 truck': 13, 'full-size': 8}
+TOTAL HOURS: 68.0
+DATE: (2022, 10, 26) CAR {'compact': 16, 'full-size': 16, 'class 1 truck': 24, 'medium': 11, 'class 2 truck': 17}
+TOTAL HOURS: 79.5
+DATE: (2022, 11, 5) CAR {'class 1 truck': 14, 'medium': 14, 'full-size': 16, 'class 2 truck': 20, 'compact': 13}
+TOTAL HOURS: 75.5
+DATE: (2022, 11, 22) CAR {'compact': 18, 'medium': 17, 'class 1 truck': 17, 'class 2 truck': 13, 'full-size': 15}
+TOTAL HOURS: 68.0
+DATE: (2022, 10, 19) CAR {'full-size': 21, 'class 1 truck': 11, 'medium': 19, 'class 2 truck': 12, 'compact': 16}
+TOTAL HOURS: 63.0
+DATE: (2022, 10, 31) CAR {'class 2 truck': 17, 'medium': 17, 'compact': 14, 'class 1 truck': 16, 'full-size': 11}
+TOTAL HOURS: 71.0
+DATE: (2022, 11, 13) CAR {'class 1 truck': 6, 'compact': 21, 'medium': 13, 'class 2 truck': 11, 'full-size': 12}
+TOTAL HOURS: 51.0
+DATE: (2022, 11, 7) CAR {'compact': 17, 'class 2 truck': 22, 'full-size': 11, 'class 1 truck': 22, 'medium': 13}
+TOTAL HOURS: 86.5
+DATE: (2022, 11, 28) CAR {'medium': 23, 'compact': 21, 'full-size': 16, 'class 1 truck': 16, 'class 2 truck': 15}
+TOTAL HOURS: 76.0
+DATE: (2022, 11, 14) CAR {'class 1 truck': 9, 'class 2 truck': 18, 'compact': 12, 'medium': 22, 'full-size': 17}
+TOTAL HOURS: 70.5
+DATE: (2022, 9, 22) CAR {'compact': 24, 'class 2 truck': 27, 'medium': 19, 'full-size': 29, 'class 1 truck': 26}
+TOTAL HOURS: 116.0
+DATE: (2022, 10, 27) CAR {'compact': 10, 'class 1 truck': 18, 'class 2 truck': 14, 'full-size': 13, 'medium': 20}
+TOTAL HOURS: 67.5
+DATE: (2022, 10, 7) CAR {'medium': 15, 'class 2 truck': 9, 'compact': 13, 'class 1 truck': 11, 'full-size': 11}
+TOTAL HOURS: 48.5
+DATE: (2022, 11, 10) CAR {'compact': 18, 'medium': 18, 'full-size': 17, 'class 1 truck': 13, 'class 2 truck': 3}
+TOTAL HOURS: 45.5
+DATE: (2022, 11, 27) CAR {'class 2 truck': 18, 'medium': 17, 'class 1 truck': 14, 'compact': 18, 'full-size': 13}
+TOTAL HOURS: 74.0
+DATE: (2022, 9, 11) CAR {'medium': 22, 'class 1 truck': 20, 'full-size': 19, 'compact': 12, 'class 2 truck': 19}
+TOTAL HOURS: 84.5
+DATE: (2022, 11, 4) CAR {'medium': 17, 'full-size': 21, 'compact': 14, 'class 1 truck': 16, 'class 2 truck': 15}
+TOTAL HOURS: 72.0
+DATE: (2022, 9, 28) CAR {'class 2 truck': 15, 'class 1 truck': 20, 'full-size': 29, 'compact': 17, 'medium': 12}
+TOTAL HOURS: 79.0
+DATE: (2022, 9, 17) CAR {'class 1 truck': 25, 'compact': 22, 'medium': 26, 'class 2 truck': 16, 'full-size': 18}
+TOTAL HOURS: 90.0
+DATE: (2022, 11, 16) CAR {'full-size': 18, 'class 2 truck': 15, 'medium': 19, 'class 1 truck': 13, 'compact': 18}
+TOTAL HOURS: 70.5
+DATE: (2022, 10, 30) CAR {'medium': 19, 'full-size': 14, 'compact': 10, 'class 2 truck': 15, 'class 1 truck': 19}
+TOTAL HOURS: 70.5
+DATE: (2022, 11, 26) CAR {'full-size': 24, 'compact': 14, 'class 2 truck': 4, 'class 1 truck': 16, 'medium': 20}
+TOTAL HOURS: 53.0
+DATE: (2022, 9, 19) CAR {'medium': 26, 'class 1 truck': 20, 'class 2 truck': 32, 'compact': 22, 'full-size': 24}
+TOTAL HOURS: 120.0
+DATE: (2022, 10, 24) CAR {'class 1 truck': 19, 'full-size': 17, 'medium': 11, 'compact': 14, 'class 2 truck': 6}
+TOTAL HOURS: 52.0
+DATE: (2022, 9, 20) CAR {'compact': 19, 'medium': 21, 'full-size': 20, 'class 2 truck': 22, 'class 1 truck': 24}
+TOTAL HOURS: 98.0
+DATE: (2022, 11, 23) CAR {'medium': 20, 'compact': 15, 'class 1 truck': 18, 'class 2 truck': 13, 'full-size': 9}
+TOTAL HOURS: 66.0
+DATE: (2022, 10, 17) CAR {'full-size': 16, 'class 2 truck': 18, 'compact': 18, 'medium': 13, 'class 1 truck': 7}
+TOTAL HOURS: 66.5
+DATE: (2022, 10, 18) CAR {'class 2 truck': 11, 'medium': 11, 'compact': 10, 'class 1 truck': 13, 'full-size': 13}
+TOTAL HOURS: 52.0
+DATE: (2022, 10, 25) CAR {'compact': 13, 'medium': 16, 'class 2 truck': 9, 'full-size': 7, 'class 1 truck': 18}
+TOTAL HOURS: 54.0
+DATE: (2022, 11, 3) CAR {'class 2 truck': 14, 'compact': 17, 'class 1 truck': 17, 'full-size': 12, 'medium': 12}
+TOTAL HOURS: 65.5
+DATE: (2022, 11, 25) CAR {'compact': 19, 'class 1 truck': 15, 'full-size': 14, 'medium': 17, 'class 2 truck': 16}
+TOTAL HOURS: 72.0
+DATE: (2022, 10, 10) CAR {'class 2 truck': 18, 'full-size': 19, 'class 1 truck': 20, 'compact': 12, 'medium': 11}
+TOTAL HOURS: 77.0
