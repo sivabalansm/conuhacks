@@ -11,7 +11,7 @@ const Schedule = () => {
 
   const date = match
     ? new Date(match.params.date)
-    : new Date('2020-10-01')
+    : new Date('2022-10-01')
 
   const changeDay = (change) => {
     const newDate = new Date(date.getTime() + change * 24 * 60 * 60 * 1000)
