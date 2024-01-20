@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import '../../global.css'
 import './dashboard.css'
 
 const Dashboard = () => {
@@ -14,7 +15,6 @@ const Dashboard = () => {
                     <Link className='sidebar-item' to='/schedule'>Schedule</Link>
                     <Link className='sidebar-item' to='/analytics'>Analytics</Link>
                 </div>
-
             </div>
             <div className='main-container'>
                 <div className='main-container-title'>
@@ -44,8 +44,6 @@ const Dashboard = () => {
                         Daily Customers Rejected
                     </div>
                 </div>
-
-
             </div>
         </>
     )
