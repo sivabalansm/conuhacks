@@ -13,4 +13,4 @@ const Analytics = () => {
     )
 }
 
-export default Info
+export default Analytics

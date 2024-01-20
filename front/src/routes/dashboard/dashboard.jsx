@@ -4,12 +4,19 @@ import './dashboard.css'
 const Dashboard = () => {
     return (
         <>
-            <div>Hi</div>
-            
-            <div className = "sidebar">
-                <Link to='/dashboard'>Dashboard</Link>
-                <Link to='/schedule'>Schedule</Link>
-                <Link to='/analytics'>Analytics</Link>
+            <div className = 'sidebar'>
+                <div className = 'sidebar-title'>
+                    Auto Repair Shop
+                </div>
+                <div className='sidebar-group'>
+                    <Link className='sidebar-item' to='/dashboard'>Dashboard</Link>
+                    <Link className='sidebar-item' to='/schedule'>Schedule</Link>
+                    <Link className='sidebar-item' to='/analytics'>Analytics</Link>
+                </div>
+
+            </div>
+            <div className='main-container'>
+                <h1>Dashboard</h1>
             </div>
         </>
     )
