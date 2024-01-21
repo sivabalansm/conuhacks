@@ -65,10 +65,10 @@ const Schedule = () => {
   return (
     <>
       <div className = 'sidebar'>
-        <div className = 'sidebar-title'>
-            <img id="logo" src="../../assets/gear.svg" alt=""/>
-            <p>SAPMechanic</p>
-        </div>
+        <Link className='sidebar-title' to='/'>
+          <img id="logo" src="../../assets/gear.svg" alt="logo"/>
+          <p>SAPMechanic</p>
+        </Link>
         <div className='sidebar-group'>
             <Link className='sidebar-item' to='/'>Dashboard</Link>
             <Link className='sidebar-item' to='/schedule'>Schedule</Link>
