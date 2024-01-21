@@ -32,21 +32,23 @@ const Analytics = () => {
 
                 {/* Quick overview of # of accepted customers and rejected customers */}
                 <div className='main-container-margin flex'>
-                    <div className='width50'>
-                        # accepted
+                    <div className='width50 analytics-customers'>
+                        <h2 id='customers-taken-text'>Customers Taken Today</h2>
+                        <p id='customers-taken'>72</p>
                     </div>
-                    <div className='width50'>
+                    <div className='width50 analytics-customers'>
                         <div>
-                            # rejected
+                            <h2>Customers Rejected</h2>
                         </div>
                         <div>
-                            $ revenue lost
+                            <h2>Potential Revenue Lost</h2>
                         </div>
                     </div>
                 </div>
 
                 {/* VEHICLE TYPES CONTAINER */}
                 <div className='main-container-margin'>
+                    <h2>Vehicle Types</h2>
 
                 {/* Compact Cars */}
                     {/* Name and icon of car */}

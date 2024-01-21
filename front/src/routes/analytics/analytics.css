@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Maston";
-  src: url("../../assets/MRKMaston-Regular.ttf");
+  font-family: "Robinson";
+  src: url("../../assets/Robinson-Regular.otf");
 }
 
 #total-revenue {
@@ -21,6 +21,23 @@
 
 #least-profitable-vehicle {
   
+}
+
+#customers-taken-text {
+  
+}
+
+#customers-taken {
+  border: 3px blue solid;
+  margin: 0;
+  font-size: 300px;
+  font-family: 'Robinson';
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-customers {
+  margin: 10px;
 }
 
 .analytics-car-item {
