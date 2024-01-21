@@ -68,9 +68,12 @@ def main():
 
 
     
-    for date in dates:
-        print(f"DATE: {date} CAR {dates[date]}")
-        print("TOTAL HOURS:", getHours(dates[date]))
-    
 
 main() 
+
+"""
+Bays.create()
+baysObj.placeCar(reg_time, park_time, car_type)
+
+
+"""
