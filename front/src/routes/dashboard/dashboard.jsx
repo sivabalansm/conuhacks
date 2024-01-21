@@ -8,7 +8,7 @@ const Dashboard = () => {
             <div className = 'sidebar'>
                 <div className = 'sidebar-title'>
                     <img id="logo" src="../../assets/gear.svg" alt=""/>
-                    <p>Repair Shop</p>
+                    <p>SAPMechanic</p>
                 </div>
                 <div className='sidebar-group'>
                     <Link className='sidebar-item' to='/'>Dashboard</Link>
