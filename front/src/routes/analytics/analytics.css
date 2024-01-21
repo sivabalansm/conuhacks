@@ -3,6 +3,16 @@
   src: url("../../assets/Robinson-Regular.otf");
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 #total-revenue {
   height: 30vh
 }
@@ -192,4 +202,6 @@
   margin-left: 15vw;
   padding-left: 2vw;
   height: 100%;
+
+  animation: fadeIn 1s ease;
 }
