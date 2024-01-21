@@ -72,6 +72,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: all 0.25s;
 }
 
 #served {
@@ -79,8 +81,6 @@
   justify-content: center;
   font-size: 54px;
   margin-top: 15%;
-  
-  animation: fadeIn 1s ease;
 }
 
 #rejected {
@@ -88,8 +88,6 @@
   justify-content: center;
   font-size: 54px;
   margin-top: 20%;
-  
-  animation: fadeIn 1s ease;
 }
 
 .done-button {

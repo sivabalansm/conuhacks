@@ -16,14 +16,18 @@ const Dashboard = () => {
         console.log('Done button pressed')
         let tempserved = served + 1
         let tempearned = earned + 1
-        let tempwidth = width + 1 // 1 value may change depending on money
+        let tempwidth = width + 5 // 1 value may change depending on money
         setServed(tempserved)
         setEarned(tempearned)
+
+        // Locks progress bar at 100
+        if (tempwidth > 100) {
+            tempwidth = 100
+        }
         setWidth(tempwidth)
+
         progressBar.style.width = width + '%'
     }
-
-    setTempData({})
 
     return (
         <>
@@ -53,7 +57,7 @@ const Dashboard = () => {
                             <h2>Daily Upcoming Schedules</h2>
                         </div>
                         <div id='schedule-item-container'>
-                            {/* List all items here, preferably in the following layout. All info goes in one <p></p> */}
+                            {/* List all items here, preferably in the following layout. All info goes in one <p></p>. Please only show first five appointments so list doesn't get too long!!!*/}
                             <div className='schedule-item'>
                                 <p>placeholder</p>
                                 <button className='done-button' onClick={handleDone}>done</button>
