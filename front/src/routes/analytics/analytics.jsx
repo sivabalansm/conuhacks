@@ -26,6 +26,7 @@ const Analytics = () => {
                         <p>Dark Mode</p>
                     </div>
                 </div>
+                <p>An overview of the statistics taken from the current batch of reservations. </p>
                 <div id='total-revenue-container' className='main-container-margin'>
                     <h2>Total Revenue</h2>
                     <p id='total-revenue'>2 468 490$</p>
@@ -34,10 +35,10 @@ const Analytics = () => {
                 {/* Quick overview of # of accepted customers and rejected customers */}
                 <div className='flex'>
                     <div id='customers-taken-container' className='width50 analytics-customers'>
-                        <h2 id='customers-taken-text'>Customers Taken</h2>
+                        <h2>Customers Taken</h2>
                         <p id='customers-taken'>72</p>
                     </div>
-                    <div id='customers-rejected-container' className='width50 analytics-customers'>
+                    <div className='width50 analytics-customers'>
                         <div id='customers-rejected'>
                             <h2>Customers Rejected</h2>
                             <p className='analytics-loss'>16</p>
@@ -49,9 +50,26 @@ const Analytics = () => {
                     </div>
                 </div>
 
-                {/* Indented Divider */}
-                <div className='idented-divider'></div>
+                {/* Number of walkins vs number of reservations */}
+                <div className='flex fix1'>
+                    <div className='width50' id='walkins'>
+                        <h2 className='flex flex-horizontal-center'>Walk-ins</h2>
+                        <div className='analytics-walk-res-container'>
+                            <p className='analytics-walkres-number'>56</p>
+                            <img className='analytics-walk-res-icons' src='../../assets/walking.svg' alt='walking-man'/>
+                        </div>
+                    </div>
+                    <div className='width50' id='reservations'>
+                        <h2 className='flex flex-horizontal-center'>Reservations</h2>
+                        <div className='analytics-walk-res-container'>
+                            <p className='analytics-walkres-number'>10</p>
+                            <img className='analytics-walk-res-icons' src='../../assets/calendar.svg' alt='walking-man'/>
+                        </div>
+                    </div>
+                </div>
 
+                {/* Indented Divider */}
+                <div className='indented-divider'>/////////////////////////////////////////////////////////////////////////////</div>                
 
                 <div id='vehicle-types-container'>
                     <h2>Vehicle Types</h2>
@@ -231,25 +249,6 @@ const Analytics = () => {
                             <div className='analytics-money-container'>
                                 <img className='analytics-checkmark' src='../../assets/money2.svg' alt='money'/>
                             </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                {/* Number of walkins vs number of reservations */}
-                <div className='main-container-margin flex'>
-                    <div className='width50' id='walkins'>
-                        <h2 className='flex flex-horizontal-center'>Walk-ins</h2>
-                        <div className='analytics-walk-res-container'>
-                            <p className='analytics-walkres-number'>56</p>
-                            <img className='analytics-walk-res-icons' src='../../assets/walking.svg' alt='walking-man'/>
-                        </div>
-                    </div>
-                    <div className='width50' id='reservations'>
-                        <h2 className='flex flex-horizontal-center'>Reservations</h2>
-                        <div className='analytics-walk-res-container'>
-                            <p className='analytics-walkres-number'>10</p>
-                            <img className='analytics-walk-res-icons' src='../../assets/calendar.svg' alt='walking-man'/>
                         </div>
                     </div>
                 </div>

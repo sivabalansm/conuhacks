@@ -9,10 +9,9 @@
 
 #walkins {
   height: 20vh;
-}
-
-#reservations {
-  
+  margin: 15px 15px 15px 0;
+  border-radius: 5px;
+  background-color: #b3b7f6;
 }
 
 #most-profitable-vehicle {
@@ -23,9 +22,6 @@
   
 }
 
-#customers-taken-text {
-  
-}
 
 #customers-rejected {
   padding-bottom: 10px;
@@ -80,14 +76,20 @@
   padding-left: 70px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 3px solid darkgrey;
   /* normal padding left is 20px so 50+20 */
   
 }
 
+#reservations {
+  margin: 15px 15px 15px 0;
+  border-radius: 5px;
+  background-color: #b3b7f6;
+}
+
 .analytics-walkres-number {
-  font-family: Robinson;
   font-size: 70px;
-  margin: 0;
+  margin: 0 20px 0 20px;
 }
 
 .analytics-walk-res-container {

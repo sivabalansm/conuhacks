@@ -20,6 +20,7 @@ body {
 }
 
 h1 {
+  text-decoration: underline;
   font-size: 38px;
 }
 
@@ -86,10 +87,11 @@ h2 {
 
 }
 
-.idented-divider {
-  height: 0;
-  border: 2px black solid;
-  margin: 30px 30% 30px 30%;
+.indented-divider {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  margin: 30px 30% 40px 30%;
   opacity: 0.5;
 }
 
@@ -143,18 +145,21 @@ h2 {
   padding-right: 20px;
 }
 
-.main-container-row1 {
-  display: flex;
+.main-container-title-child h1 {
+  margin-bottom: 9px;
 }
 
-.main-container-title {
+.main-container-row1 {
   display: flex;
-  align-items: center;
-  vertical-align: center;
-
 }
 
 .dashboard-row {
   padding-left: 20px;
 }
 /* MAIN CONTAINER END */
+
+/* Lazy fixes :(((( it's not clean but we don't have much time */
+
+.fix1 {
+  margin-top: -10px;
+}
