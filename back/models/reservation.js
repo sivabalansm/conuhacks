@@ -16,7 +16,15 @@ const reservationSchema = new mongoose.Schema({
   bay: {
     type: Number,
     required: true,
-  }
+  },
+  walkIn: {
+    type: Boolean,
+    required: true
+  },
+  reject: {
+    type: Boolean,
+    required: true
+  },
 })
 
 reservationSchema.set('toJSON', {

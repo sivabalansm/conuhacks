@@ -3,7 +3,10 @@ const Date = require('../models/date')
 
 dateRouter.get('/', async (request, response) => {
   const dates = await Date
-    .find({}).populate('reservations')
+    .find({}).populate({
+        path: 'reservations',
+        match: { reject: false }, 
+    })
   response.json(dates)
 })
 
