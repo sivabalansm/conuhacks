@@ -17,7 +17,7 @@ const Car = ({ car }) => {
   }
 
   return (
-    <div className='car' style={carStyle}>
+    <div id={car.type.replace(/\s/g, '')} className='car' style={carStyle}>
       <p>{car.type}</p>
       <p>{car.time}</p>
     </div>
