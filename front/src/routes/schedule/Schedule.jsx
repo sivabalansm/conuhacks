@@ -3,6 +3,8 @@ import { useMatch, useNavigate } from 'react-router-dom'
 
 import Row from './Row'
 import Car from './Car'
+import Chat from '../../components/chat/Chat'
+
 import './schedule.css'
 import '../../global.css'
 
@@ -13,6 +15,8 @@ const Schedule = () => {
   const date = match
     ? new Date(match.params.date)
     : new Date('2022-10-01')
+
+  
 
   const changeDay = (change) => {
     const newDate = new Date(date.getTime() + change * 24 * 60 * 60 * 1000)
@@ -47,7 +51,7 @@ const Schedule = () => {
         <button onClick={() => changeDay(-1)}>Previous Day</button>
         <button onClick={() => changeDay(+1)}>Next Day</button>
       </div>
-      
+      <Chat />
     </>
   )
 }

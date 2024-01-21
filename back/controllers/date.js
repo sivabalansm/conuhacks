@@ -7,6 +7,12 @@ dateRouter.get('/', async (request, response) => {
   response.json(dates)
 })
 
+dateRouter.get('/:date', async(request, response) => {
+  const date = await Date
+    .find({ date: request.params.date }).populate('reservations')
+  response.json(date)
+})
+
 dateRouter.post('/', async (request, response) => {
   console.log(request.body)
   const content = request.body
