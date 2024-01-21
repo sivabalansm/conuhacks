@@ -4,6 +4,16 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 html {
   height: 650px;
 }
@@ -11,10 +21,13 @@ html {
 #schedule-main {
   width: 85vw;
   margin-left: auto;
+
+  animation: fadeIn 1s ease;
 }
 
 .subheader {
   text-align: center;
+  text-decoration: underline;
 }
 
 #buttons {
@@ -37,6 +50,11 @@ html {
   display: flex;
 }
 
+.bays {
+  background-color: lightgrey;
+  padding: 10px 0 10px 0;
+}
+
 .schedule_base {
   display: relative;
   border: 1px solid black;
@@ -53,6 +71,7 @@ html {
   width: 80px
 }
 
+/* All borders of the grid */
 .schedule_row td {
   box-sizing: border-box;
   height: 60px;
@@ -61,10 +80,13 @@ html {
   width: 100px;
 }
 
+/* All borders of schedule timing */
 .schedule_row td:first-child {
   padding: 0;
   text-align: center;
   font-size: 14px;
+
+  background-color: #b3b7f6;
 }
 
 #cars {
@@ -74,10 +96,12 @@ html {
 
 .car {
   box-sizing: border-box;
-  border: 1px solid black;
   width: 100px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
   height: 100px;
-  background-color: antiquewhite;
+  background-color: rgb(215, 148, 53);
   position: absolute;
   font-size: small;
   text-align: center;
@@ -89,4 +113,24 @@ html {
 .car p {
   font-size: 12px;
   margin: -2px 0;
+}
+
+#compact {
+  background-color: rgb(148, 209, 250);
+}
+
+#medium {
+  background-color: rgb(189, 123, 251);
+}
+
+#full-size {
+  background-color: rgb(240, 123, 251);
+}
+
+#class1truck {
+  background-color: rgb(215, 148, 53);
+}
+
+#class2truck {
+  background-color: rgb(215, 85, 53);
 }

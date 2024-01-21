@@ -86,8 +86,8 @@ const Schedule = () => {
         <table className='schedule_base'>
           <thead>
             <tr className='schedule_header'>
-              <th></th>
-              {_.range(1, 11).map(num => <th key={num}>Bay {num}</th>)}
+              <th className='bays'></th>
+              {_.range(1, 11).map(num => <th className='bays' key={num}>Bay {num}</th>)}
             </tr>
           </thead>
           <div id='cars'>
