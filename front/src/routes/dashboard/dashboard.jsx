@@ -32,7 +32,7 @@ const Dashboard = () => {
                 <div className='main-container-title'>
                     <div className='flex'>
                         <div className='main-container-title-child'>
-                            <h1><span>Put actual date here</span></h1>     
+                            <h1 id='today-title'><span>Put actual date here</span></h1>     
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const Dashboard = () => {
                     <div id='daily-upcoming-schedules'>
                         {/* Plug-in upcoming schedules as a list of items */}
                         <h2>Daily Upcoming Schedules</h2>
-                        <div>
+                        <div className='schedule-item'>
                             <p>placeholder <button onClick={handleDone}>done</button></p>
                         </div>
                     </div>
