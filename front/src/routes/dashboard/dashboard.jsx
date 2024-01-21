@@ -23,6 +23,8 @@ const Dashboard = () => {
         progressBar.style.width = width + '%'
     }
 
+    setTempData({})
+
     return (
         <>
             <div className = 'sidebar'>

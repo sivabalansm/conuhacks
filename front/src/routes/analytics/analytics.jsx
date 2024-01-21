@@ -1,8 +1,73 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+
+import reservationServices from '../../services/reservation'
+
 import '../../global.css'
 import './analytics.css'
 
+const profit = {
+    'compact': 150,
+    'medium': 150,
+    'full-size': 150,
+    'class 1 truck': 250,
+    'class 2 truck': 700
+}
+
+
 const Analytics = () => {
+    const [reservations, setReservations] = useState([])
+    const [totalRevenue, setTotalRevenue] = useState(0)
+    const [totalCustomers, setTotalCustomers] = useState(0)
+    const [totalCompact, setTotalCompact] = useState(0)
+    const [totalMedium, setTotalMedium] = useState(0)
+    const [totalFullSize, setTotalFullSize] = useState(0)
+    const [totalTruck1, setTotalTruck1] = useState(0)
+    const [totalTruck2, setTotalTruck2] = useState(0)
+
+
+    useEffect(() => {
+        const init = async () => {
+            const initialReservations = await reservationServices.getAll()
+            setReservations(initialReservations)
+        }
+        init()
+    }, [])
+
+    useEffect(() => {
+        const init = () => {
+            let newTotalRevenue = 0
+            let newTotalCustomers = 0
+            let count = {
+                'compact': 0,
+                'medium': 0,
+                'full-size': 0,
+                'class 1 truck': 0,
+                'class 2 truck': 0
+            }
+            reservations.forEach(reservation => {
+                newTotalRevenue += profit[reservation.type]
+                newTotalCustomers += 1
+                count[reservation.type] += 1
+                setTotalCustomers(newTotalCustomers)
+            })
+            setTotalRevenue(newTotalRevenue)
+            setTotalCustomers(newTotalCustomers)
+            setTotalCompact(count['compact'])
+            setTotalMedium(count['medium'])
+            setTotalFullSize(count['full-size'])
+            setTotalTruck1(count['class 1 truck'])
+            setTotalTruck2(count['class 2 truck'])
+
+        }
+        if (!reservations) {
+            return null
+        } else {
+            init()
+        }
+        
+    }, [reservations])
+
     return (
         <>
             <div className = 'sidebar'>
@@ -26,14 +91,14 @@ const Analytics = () => {
                 <p>An overview of the statistics taken from the current batch of reservations. </p>
                 <div id='total-revenue-container' className='main-container-margin'>
                     <h2>Total Revenue</h2>
-                    <p id='total-revenue'>2 468 490$</p>
+                    <p id='total-revenue'>{totalRevenue}$</p>
                 </div>
 
                 {/* Quick overview of # of accepted customers and rejected customers */}
                 <div className='flex'>
                     <div id='customers-taken-container' className='width50 analytics-customers'>
                         <h2>Customers Taken</h2>
-                        <p id='customers-taken'>72</p>
+                        <p id='customers-taken'>{totalCustomers}</p>
                     </div>
                     <div className='width50 analytics-customers'>
                         <div id='customers-rejected'>
@@ -86,7 +151,7 @@ const Analytics = () => {
 
                         {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>200</p>
+                            <p className='analytics-checkmark-text'>{totalCompact}</p>
                             <div className='analytics-checkmark-container'>
                                 <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
                             </div>
@@ -102,7 +167,7 @@ const Analytics = () => {
 
                         {/* Amout of Money earned from vehicle type */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>1000$</p>
+                            <p className='analytics-checkmark-text'>{totalCompact * 150}$</p>
                             <div className='analytics-money-container'>
                                 <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
                             </div>
@@ -121,7 +186,7 @@ const Analytics = () => {
 
                         {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>79</p>
+                            <p className='analytics-checkmark-text'>{totalMedium}</p>
                             <div className='analytics-checkmark-container'>
                                 <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
                             </div>
@@ -137,7 +202,7 @@ const Analytics = () => {
 
                         {/* Amout of Money earned from vehicle type */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>9999$</p>
+                            <p className='analytics-checkmark-text'>{totalMedium * 150}$</p>
                             <div className='analytics-money-container'>
                                 <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
                             </div>
@@ -156,7 +221,7 @@ const Analytics = () => {
 
                         {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>2</p>
+                            <p className='analytics-checkmark-text'>{totalFullSize}</p>
                             <div className='analytics-checkmark-container'>
                                 <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
                             </div>
@@ -172,7 +237,7 @@ const Analytics = () => {
 
                         {/* Amout of Money earned from vehicle type */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>9000$</p>
+                            <p className='analytics-checkmark-text'>{totalFullSize * 150}$</p>
                             <div className='analytics-money-container'>
                                 <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
                             </div>
@@ -191,7 +256,7 @@ const Analytics = () => {
 
                         {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>9</p>
+                            <p className='analytics-checkmark-text'>{totalTruck1}</p>
                             <div className='analytics-checkmark-container'>
                                 <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
                             </div>
@@ -207,7 +272,7 @@ const Analytics = () => {
 
                         {/* Amout of Money earned from vehicle type */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>19823$</p>
+                            <p className='analytics-checkmark-text'>{totalTruck1 * 250}$</p>
                             <div className='analytics-money-container'>
                                 <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
                             </div>
@@ -226,7 +291,7 @@ const Analytics = () => {
 
                         {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>10</p>
+                            <p className='analytics-checkmark-text'>{totalTruck2}</p>
                             <div className='analytics-checkmark-container'>
                                 <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
                             </div>
@@ -242,7 +307,7 @@ const Analytics = () => {
 
                         {/* Amout of Money earned from vehicle type */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>22098$</p>
+                            <p className='analytics-checkmark-text'>{totalTruck2 * 700}$</p>
                             <div className='analytics-money-container'>
                                 <img className='analytics-checkmark' src='../../assets/money2.svg' alt='money'/>
                             </div>
