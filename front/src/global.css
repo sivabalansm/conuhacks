@@ -4,8 +4,14 @@
 }
 
 /* ### REUSABLE CSS START ### */
+
 div {
-  border: 3px red solid;
+  border: 1.5px red solid;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 body {
@@ -21,6 +27,10 @@ h1 {
   font-size: 12px;
 }
 
+.font-21 {
+  font-size: 21px;
+}
+
 .flex {
   display: flex;
 }
@@ -31,16 +41,28 @@ h1 {
 
 /* Widths */
 
-.width50 {
-  width: 50%;
+.width10 {
+  width: 10%;
+}
+
+.width15 {
+  width: 15%;
+}
+
+.width20 {
+  width: 20%;
 }
 
 .width22-5 {
   width: 22.5%;
 }
 
-.width10 {
-  width: 10%;
+.width30 {
+  width: 30%;
+}
+
+.width50 {
+  width: 50%;
 }
 
 /* SIDEBAR */

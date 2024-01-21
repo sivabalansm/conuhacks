@@ -53,18 +53,26 @@ const Analytics = () => {
                         <div className='width10 flex flex-horizontal-center'>
                             <img className='analytics-icon' src='../../assets/small-car.svg' alt=''/>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+
+                        <div className='analytics-car-item'>
                             <p>Compact car</p>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># served</p>
-                            <img src='' alt=''/>
+
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>2000</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># turntaway</p>
-                            <img src='' alt=''/>
+
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>12</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+
+                        <div className='analytics-car-item'>
                             <p><span>1000$</span>Total</p>
                         </div>
                     </div>
@@ -74,18 +82,26 @@ const Analytics = () => {
                         <div className='width10 flex flex-horizontal-center'>
                             <img className='analytics-icon' src='../../assets/medium-car.svg' alt=''/>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+
+                        <div className='analytics-car-item'>
                             <p>Medium car</p>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># served</p>
-                            <img src='' alt=''/>
+
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>2000</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># turntaway</p>
-                            <img src='' alt=''/>
+
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>99</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+
+                        <div className='analytics-car-item'>
                             <p><span>1000$</span>Total</p>
                         </div>
                     </div>
@@ -95,18 +111,26 @@ const Analytics = () => {
                         <div className='width10 flex flex-horizontal-center'>
                             <img className='analytics-icon' src='../../assets/large-car.svg' alt=''/>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+                        
+                        <div className='analytics-car-item'>
                             <p>Full-size car</p>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># served</p>
-                            <img src='' alt=''/>
+                        
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>2000</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># turntaway</p>
-                            <img src='' alt=''/>
+                        
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>99</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+                        
+                        <div className='analytics-car-item'>
                             <p><span>1000$</span>Total</p>
                         </div>
                     </div>
@@ -116,18 +140,26 @@ const Analytics = () => {
                         <div className='width10 flex flex-horizontal-center'>
                             <img className='analytics-icon' src='../../assets/small-truck.svg' alt=''/>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+                        
+                        <div className='analytics-car-item'>
                             <p>Class 1 Truck</p>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># served</p>
-                            <img src='' alt=''/>
+                        
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>2000</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># turntaway</p>
-                            <img src='' alt=''/>
+                        
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>99</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+                        
+                        <div className='analytics-car-item'>
                             <p><span>1000$</span>Total</p>
                         </div>
                     </div>
@@ -137,18 +169,26 @@ const Analytics = () => {
                         <div className='width10 flex flex-horizontal-center'>
                             <img className='analytics-icon' src='../../assets/large-truck.svg' alt=''/>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+                        
+                        <div className='analytics-car-item'>
                             <p>Class 2 Truck</p>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># served</p>
-                            <img src='' alt=''/>
+                        
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>2500</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
-                            <p># turntaway</p>
-                            <img src='' alt=''/>
+                        
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>99</p>
+                            <div className='width15 flex flex-horizontal-center'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
                         </div>
-                        <div className='width22-5 flex flex-horizontal-center'>
+                        
+                        <div className='analytics-car-item'>
                             <p><span>1000$</span>Total</p>
                         </div>
                     </div>
