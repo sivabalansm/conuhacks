@@ -37,7 +37,6 @@
 }
 
 #total-revenue {
-  border: 3px blue solid;
   margin: 0;
   font-size: 170px;
   font-family: 'Robinson';
@@ -46,7 +45,6 @@
 }
 
 #customers-taken {
-  border: 3px blue solid;
   margin-top: 10%;
   margin-bottom: 0;
   font-size: 140px;

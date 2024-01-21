@@ -233,10 +233,16 @@ const Analytics = () => {
                 {/* Number of walkins vs number of reservations */}
                 <div className='main-container-margin flex'>
                     <div className='width50' id='walkins'>
-                        <h2>Walk-ins</h2>
+                        <h2 className='flex flex-horizontal-center'>Walk-ins</h2>
+                        <div>
+                            image
+                        </div>
                     </div>
                     <div className='width50' id='reservations'>
-                        <h2>Reservations</h2>
+                        <h2 className='flex flex-horizontal-center'>Reservations</h2>
+                        <div>
+                            image
+                        </div>
                     </div>
                 </div>
             </div>
