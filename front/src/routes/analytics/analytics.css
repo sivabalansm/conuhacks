@@ -54,6 +54,27 @@
   justify-content: center;
 }
 
+#walkins {
+  height: 300px;
+}
+
+.analytics-walkres-number {
+  font-family: Robinson;
+  font-size: 70px;
+  margin: 0;
+}
+
+.analytics-walk-res-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10% 40% 0 40%;
+}
+
+.analytics-walk-res-icons {
+  height: 50px;
+}
+
 .analytics-loss {
   font-family: 'Robinson';
   font-size: 70px;
@@ -135,6 +156,6 @@
 
 .analytics-main-container {
   margin-left: 13vw;
-  padding-left: 1vw;
-  height: 250vh;
+  padding-left: 1.5vw;
+  height: 240vh;
 }

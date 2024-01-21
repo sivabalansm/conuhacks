@@ -215,7 +215,7 @@ const Analytics = () => {
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>4</p>
                             <div className='analytics-cross-container'>
-                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt='cross'/>
                             </div>
                         </div>
 
@@ -223,7 +223,7 @@ const Analytics = () => {
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>22098$</p>
                             <div className='analytics-money-container'>
-                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
+                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt='money'/>
                             </div>
                         </div>
                     </div>
@@ -234,14 +234,16 @@ const Analytics = () => {
                 <div className='main-container-margin flex'>
                     <div className='width50' id='walkins'>
                         <h2 className='flex flex-horizontal-center'>Walk-ins</h2>
-                        <div>
-                            image
+                        <div className='analytics-walk-res-container'>
+                            <p className='analytics-walkres-number'>56</p>
+                            <img className='analytics-walk-res-icons' src='../../assets/walking.svg' alt='walking-man'/>
                         </div>
                     </div>
                     <div className='width50' id='reservations'>
                         <h2 className='flex flex-horizontal-center'>Reservations</h2>
-                        <div>
-                            image
+                        <div className='analytics-walk-res-container'>
+                            <p className='analytics-walkres-number'>10</p>
+                            <img className='analytics-walk-res-icons' src='../../assets/calendar.svg' alt='walking-man'/>
                         </div>
                     </div>
                 </div>

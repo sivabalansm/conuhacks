@@ -123,7 +123,7 @@ h2 {
 
 .main-container {
   margin-left: 13vw;
-  padding-left: 1vw;
+  padding-left: 1.5vw;
   height: 100vh;
 }
 
@@ -131,7 +131,7 @@ h2 {
   display: flex;
   align-items: center;
   vertical-align: center;
-
+  justify-content: space-between;
 }
 
 .main-container-title-child {
