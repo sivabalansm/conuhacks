@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom'
 import '../../global.css'
 import './dashboard.css'
+import { useState, useEffect } from 'react'
+
+const [served, setServed] = useState(0)
+const [earned, setEarned] = useState(0)
+const [tempdata, setTempData] = useState({})
+setTempData({})
 
 const Dashboard = () => {
     return (
@@ -30,7 +36,8 @@ const Dashboard = () => {
                         Daily Upcoming Schedules
                     </div>
                     <div id='daily-customers-done-ratio'>
-                        0/47 Customers Circle Graph
+                        <h2>Customers Served</h2>
+                        <p>{}0 / 47</p>
                     </div>
                 </div>
                 <div className='dashboard-row'>
@@ -49,7 +56,6 @@ const Dashboard = () => {
                     <div id='daily-customers-rejected'>
                         {/* Plug-in daily customers rejected */}
                         Daily Customers Rejected
-
                     </div>
                 </div>
             </div>
