@@ -16,6 +16,227 @@ const Analytics = () => {
                     <Link className='sidebar-item' to='/analytics'>Analytics</Link>
                 </div>
             </div>
+            {/* MAIN PAGE CONTAINER */}
+            <div className='analytics-main-container'>
+                <div className='main-container-title'>
+                    <div className='main-container-title-child'>
+                        <h1>Analytics</h1>     
+                    </div>
+                    <div className='main-container-title-child'>
+                        <p>Dark Mode</p>
+                    </div>
+                </div>
+                <div className='main-container-margin' id="total-revenue">
+                    Total Revenue
+                </div>
+
+                {/* Quick overview of # of accepted customers and rejected customers */}
+                <div className='main-container-margin flex'>
+                    <div className='width50 analytics-customers'>
+                        <h2 id='customers-taken-text'>Customers Taken Today</h2>
+                        <p id='customers-taken'>72</p>
+                    </div>
+                    <div className='width50 analytics-customers'>
+                        <div>
+                            <h2>Customers Rejected</h2>
+                        </div>
+                        <div>
+                            <h2>Potential Revenue Lost</h2>
+                        </div>
+                    </div>
+                </div>
+
+                {/* VEHICLE TYPES CONTAINER */}
+                <div className='main-container-margin'>
+                    <h2>Vehicle Types</h2>
+
+                {/* Compact Cars */}
+                    {/* Name and icon of car */}
+                    <div className='flex analytics-car'>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/small-car.svg' alt=''/>
+                        </div>
+                        <div className='analytics-car-item2'>
+                            <p className='analytics-car-name'>Compact car</p>
+                        </div>
+
+                        {/* Amount of overall revenue */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>200</p>
+                            <div className='analytics-checkmark-container'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amount of revenue loss */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>12</p>
+                            <div className='analytics-cross-container'>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amout of Money earned from vehicle type */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>1000$</p>
+                            <div className='analytics-money-container'>
+                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
+                            </div>
+                        </div>
+                    </div>
+
+                {/* Medium Cars */}
+                    {/* Name and icon of car */}
+                    <div className='flex analytics-car'>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/medium-car.svg' alt=''/>
+                        </div>
+                        <div className='analytics-car-item2'>
+                            <p className='analytics-car-name'>Medium car</p>
+                        </div>
+
+                        {/* Amount of overall revenue */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>79</p>
+                            <div className='analytics-checkmark-container'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amount of revenue loss */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>12</p>
+                            <div className='analytics-cross-container'>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amout of Money earned from vehicle type */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>9999$</p>
+                            <div className='analytics-money-container'>
+                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
+                            </div>
+                        </div>
+                    </div>
+
+                {/* Full-size Cars */}
+                    {/* Name and icon of car */}
+                    <div className='flex analytics-car'>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/large-car.svg' alt=''/>
+                        </div>
+                        <div className='analytics-car-item2'>
+                            <p className='analytics-car-name'>Full-size car</p>
+                        </div>
+
+                        {/* Amount of overall revenue */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>2</p>
+                            <div className='analytics-checkmark-container'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amount of revenue loss */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>10</p>
+                            <div className='analytics-cross-container'>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amout of Money earned from vehicle type */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>9000$</p>
+                            <div className='analytics-money-container'>
+                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
+                            </div>
+                        </div>
+                    </div>
+
+                {/* Class 1 Truck */}
+                    {/* Name and icon of car */}
+                    <div className='flex analytics-car'>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/small-truck.svg' alt=''/>
+                        </div>
+                        <div className='analytics-car-item2'>
+                            <p className='analytics-car-name'>Class 1 Truck</p>
+                        </div>
+
+                        {/* Amount of overall revenue */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>9</p>
+                            <div className='analytics-checkmark-container'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amount of revenue loss */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>2</p>
+                            <div className='analytics-cross-container'>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amout of Money earned from vehicle type */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>19823$</p>
+                            <div className='analytics-money-container'>
+                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
+                            </div>
+                        </div>
+                    </div>
+
+                {/* Class 2 Truck */}
+                    {/* Name and icon of car */}
+                    <div className='flex analytics-car'>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/large-truck.svg' alt=''/>
+                        </div>
+                        <div className='analytics-car-item2'>
+                            <p className='analytics-car-name'>Class 2 Truck</p>
+                        </div>
+
+                        {/* Amount of overall revenue */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>10</p>
+                            <div className='analytics-checkmark-container'>
+                                <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amount of revenue loss */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>4</p>
+                            <div className='analytics-cross-container'>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                            </div>
+                        </div>
+
+                        {/* Amout of Money earned from vehicle type */}
+                        <div className='analytics-car-item'>
+                            <p className='analytics-checkmark-text'>22098$</p>
+                            <div className='analytics-money-container'>
+                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {/* Number of walkins vs number of reservations */}
+                <div className='main-container-margin flex'>
+                    <div className='width50' id='walkins'>
+                        walkins
+                    </div>
+                    <div className='width50' id='reservations'>
+                        reservations
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
