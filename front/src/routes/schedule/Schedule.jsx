@@ -82,6 +82,13 @@ const Schedule = () => {
         <button onClick={() => changeToToday()}>Today</button>
         <button onClick={() => changeDay(+1)}>&gt;</button>
       </div>
+      <div id='color-legend'>
+        <div id='compact'className='legend-color-container'>Compact Car</div>
+        <div id='medium'className='legend-color-container'>Medium Car</div>
+        <div id='full-size'className='legend-color-container'>Full-size Car</div>
+        <div id='class1truck'className='legend-color-container'>Class 1 Truck</div>
+        <div id='class2truck'className='legend-color-container'>Class 2 Truck</div>
+      </div>
       <div className='schedule'>
         <table className='schedule_base'>
           <thead>
