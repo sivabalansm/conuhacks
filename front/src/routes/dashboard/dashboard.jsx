@@ -3,12 +3,12 @@ import '../../global.css'
 import './dashboard.css'
 import { useState, useEffect } from 'react'
 
-const [served, setServed] = useState(0)
-const [earned, setEarned] = useState(0)
-const [tempdata, setTempData] = useState({})
-setTempData({})
-
 const Dashboard = () => {
+    const [served, setServed] = useState(0)
+    const [earned, setEarned] = useState(0)
+    const [tempdata, setTempData] = useState({})
+    setTempData({})
+
     return (
         <>
             <div className = 'sidebar'>
