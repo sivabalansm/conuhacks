@@ -45,7 +45,6 @@
 #total-revenue {
   margin: 0;
   font-size: 170px;
-  font-family: 'Robinson';
   display: flex;
   justify-content: left;
 }
@@ -54,8 +53,6 @@
   margin-top: 10%;
   margin-bottom: 0;
   font-size: 140px;
-  font-family: 'Robinson';
-
   display: flex;
   justify-content: center;
 }
@@ -94,7 +91,6 @@
 }
 
 .analytics-loss {
-  font-family: 'Robinson';
   font-size: 70px;
   margin: 0;
   display: flex;
