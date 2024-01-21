@@ -60,7 +60,7 @@ const Analytics = () => {
 
                         {/* Amount of overall revenue */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>20000000</p>
+                            <p className='analytics-checkmark-text'>200</p>
                             <div className='analytics-checkmark-container'>
                                 <img className='analytics-checkmark' src='../../assets/checkmark.svg' alt=''/>
                             </div>

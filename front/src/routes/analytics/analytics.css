@@ -21,12 +21,14 @@
 .analytics-car-item {
   width: 22.5%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .analytics-checkmark-container {
   width: 12%;
   margin-left: 15px;
+  margin-right: 33%;
   display: flex;
   justify-content: center;
 }
@@ -34,6 +36,7 @@
 .analytics-checkmark-text {
   font-size: 21px;
   font-weight: bolder;
+  margin-left: 33%;
 }
 
 .analytics-checkmark {
