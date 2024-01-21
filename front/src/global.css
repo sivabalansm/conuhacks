@@ -5,6 +5,10 @@
 
 /* ### REUSABLE CSS START ### */
 
+/* div {
+  border: 1px red solid;
+} */
+
 img {
   user-select: none;
   -webkit-user-drag: none;
@@ -137,7 +141,6 @@ h2 {
   align-items: center;
   vertical-align: center;
   justify-content: space-between;
-  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -149,9 +152,6 @@ h2 {
   display: flex;
 }
 
-.dashboard-row {
-  padding-left: 20px;
-}
 /* MAIN CONTAINER END */
 
 /* Lazy fixes :(((( it's not clean but we don't have much time */
