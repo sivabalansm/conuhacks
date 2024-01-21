@@ -25,6 +25,10 @@ h1 {
   display: flex;
 }
 
+.flex-horizontal-center {
+  justify-content: center;
+}
+
 /* Widths */
 
 .width50 {

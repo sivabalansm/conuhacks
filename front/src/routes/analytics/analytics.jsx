@@ -47,81 +47,112 @@ const Analytics = () => {
 
                 {/* VEHICLE TYPES CONTAINER */}
                 <div className='main-container-margin'>
+
+                    {/* Compact Cars */}
                     <div className='flex analytics-car'>
-                        <img className='width10' src='' alt=''/>
-                        <p className='width22-5'>compact car</p>
-                        <div className='width22-5'>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/small-car.svg' alt=''/>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p>Compact car</p>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># served</p>
                             <img src='' alt=''/>
                         </div>
-                        <div className='width22-5'>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># turntaway</p>
                             <img src='' alt=''/>
                         </div>
-                        <div className='width22-5'>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p><span>1000$</span>Total</p>
                         </div>
                     </div>
+
+                    {/* Medium Cars */}
                     <div className='flex analytics-car'>
-                        <img src='' alt=''/>
-                        <p>medium car</p>
-                        <div>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/medium-car.svg' alt=''/>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p>Medium car</p>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># served</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># turntaway</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
-                            <p><span>69$</span>Total</p>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p><span>1000$</span>Total</p>
                         </div>
                     </div>
+
+                    {/* Full-size Cars */}
                     <div className='flex analytics-car'>
-                        <img src='' alt=''/>
-                        <p>full-size car</p>
-                        <div>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/large-car.svg' alt=''/>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p>Full-size car</p>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># served</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># turntaway</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
-                            <p><span>2$</span>Total</p>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p><span>1000$</span>Total</p>
                         </div>
                     </div>
+
+                    {/* Class 1 Trucks */}
                     <div className='flex analytics-car'>
-                        <img src='' alt=''/>
-                        <p>class 1 truck</p>
-                        <div>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/small-truck.svg' alt=''/>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p>Class 1 Truck</p>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># served</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># turntaway</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
-                            <p><span>999$</span>Total</p>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p><span>1000$</span>Total</p>
                         </div>
                     </div>
+
+                    {/* Class 2 Trucks */}
                     <div className='flex analytics-car'>
-                        <img src='' alt=''/>
-                        <p>class 2 truck</p>
-                        <div>
+                        <div className='width10 flex flex-horizontal-center'>
+                            <img className='analytics-icon' src='../../assets/large-truck.svg' alt=''/>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p>Class 2 Truck</p>
+                        </div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># served</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
+                        <div className='width22-5 flex flex-horizontal-center'>
                             <p># turntaway</p>
                             <img src='' alt=''/>
                         </div>
-                        <div>
-                            <p><span>2000$</span>Total</p>
+                        <div className='width22-5 flex flex-horizontal-center'>
+                            <p><span>1000$</span>Total</p>
                         </div>
                     </div>
+
                 </div>
 
                 {/* Most and Least profitable vehicle types */}
