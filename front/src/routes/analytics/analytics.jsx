@@ -22,9 +22,6 @@ const Analytics = () => {
                     <div className='main-container-title-child'>
                         <h1>Analytics</h1>     
                     </div>
-                    <div className='main-container-title-child'>
-                        <p>Dark Mode</p>
-                    </div>
                 </div>
                 <p>An overview of the statistics taken from the current batch of reservations. </p>
                 <div id='total-revenue-container' className='main-container-margin'>

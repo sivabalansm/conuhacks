@@ -26,9 +26,6 @@ const Dashboard = () => {
                             <p>the actual date</p>
                         </div>
                     </div>
-                    <div className='main-container-title-child'>
-                        <p>Dark Mode</p>
-                    </div>
                 </div>
                 <div className='dashboard-row'>
                     <div id='daily-upcoming-schedules'>
