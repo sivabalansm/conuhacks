@@ -2,29 +2,39 @@ import { Link } from 'react-router-dom'
 import '../../global.css'
 import './dashboard.css'
 import { useState, useEffect } from 'react'
+import reservationServices from '../../services/reservation'
 
 const Dashboard = () => {
     const [served, setServed] = useState(0)
     const [toserve, setToServer] = useState(47) // fake data
     const [earned, setEarned] = useState(0)
-    const [tempdata, setTempData] = useState({})
+    const [data, setData] = useState({})
     const [width, setWidth] = useState(0)
+    const date = new Date('2022-10-01')
+    const actualDate = new Date()
+
+    date.setUTCHours(actualDate.getUTCHours() - 1)
+    date.setUTCMinutes(actualDate.getUTCMinutes())
+
+    useEffect(() => {
+        const response = reservationServices.getFromDate()
+    })
 
     const progressBar = document.getElementById('progress-bar-inside')
 
     const handleDone = () => {
         console.log('Done button pressed')
-        let tempserved = served + 1
-        let tempearned = earned + 1
-        let tempwidth = width + 5 // 1 value may change depending on money
-        setServed(tempserved)
-        setEarned(tempearned)
+        let tempServed = served + 1
+        let tempEarned = earned + 1
+        let tempWidth = width + 5 // 1 value may change depending on money
+        setServed(tempServed)
+        setEarned(tempEarned)
 
         // Locks progress bar at 100
-        if (tempwidth > 100) {
-            tempwidth = 100
+        if (tempWidth > 100) {
+            tempWidth = 100
         }
-        setWidth(tempwidth)
+        setWidth(tempWidth)
 
         progressBar.style.width = width + '%'
     }
@@ -46,7 +56,7 @@ const Dashboard = () => {
                 <div className='main-container-title'>
                     <div className='flex'>
                         <div className='main-container-title-child'>
-                            <h1 id='today-title'><span>Today's date</span></h1>     
+                            <h1 id='today-title'><span>Today's date: {date.toUTCString().slice(0, 16)}</span></h1>     
                         </div>
                     </div>
                 </div>
