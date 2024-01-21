@@ -8,10 +8,13 @@ const Dashboard = () => {
     const [served, setServed] = useState(0)
     const [toServe, setToServe] = useState(0) // fake data
     const [earned, setEarned] = useState(0)
+    const [toearn, setToEarn] = useState(999) // fake data
+    const [data, setData] = useState({})
     const [cars, setCars] = useState({})
     const [width, setWidth] = useState(0)
     const date = new Date('2022-10-01')
     const actualDate = new Date()
+    const progressBar = document.getElementById('progress-bar-inside')
 
     date.setUTCHours(actualDate.getUTCHours() - 1)
     date.setUTCMinutes(actualDate.getUTCMinutes())
@@ -27,23 +30,26 @@ const Dashboard = () => {
         init()
     })
 
-    const progressBar = document.getElementById('progress-bar-inside')
-
     const handleDone = () => {
         console.log('Done button pressed')
         let tempServed = served + 1
-        let tempEarned = earned + 1
-        let tempWidth = width + 5 // 1 value may change depending on money
-        setServed(tempServed)
-        setEarned(tempEarned)
+        let fakeAppointmentRevenue = 300
+        let tempEarned = earned + fakeAppointmentRevenue
+        let ratio = (tempEarned/toearn)*100
+        let tempWidth = ratio // value may change depending on money
 
         // Locks progress bar at 100
-        if (tempWidth > 100) {
+        if (ratio > 100) {
             tempWidth = 100
+            progressBar.style.backgroundColor = '#3bba4a'
         }
+
+        setServed(tempServed)
+        setEarned(tempEarned)
         setWidth(tempWidth)
 
-        progressBar.style.width = width + '%'
+        progressBar.style.width = tempWidth + '%'
+        
     }
 
     return (
@@ -53,6 +59,7 @@ const Dashboard = () => {
                     <img id="logo" src="../../assets/gear.svg" alt="logo"/>
                     <p>SAPMechanic</p>
                 </Link>
+                <div className='indented-divider2'></div>
                 <div className='sidebar-group'>
                     <Link className='sidebar-item' to='/'>Dashboard</Link>
                     <Link className='sidebar-item' to='/schedule'>Schedule</Link>
@@ -110,7 +117,7 @@ const Dashboard = () => {
                         <h2>Daily Possible Profit</h2>
                         {/* Plug-in possible daily profit */}
                         <div id='possible-profit-container'>
-                            {earned} / {}$
+                            {earned} / {toearn}$
                         </div>
                         <div id='progress-bar'>
                             {/* Enter percentage progress bar earned */}
