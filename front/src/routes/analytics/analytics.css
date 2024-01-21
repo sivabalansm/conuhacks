@@ -21,15 +21,13 @@
 .analytics-car-item {
   width: 22.5%;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-.analytics-icon {
-  width: 45%;
-}
-
-.analytics-checkmark {
-  width: 100%;
+.analytics-checkmark-container {
+  width: 12%;
+  margin-left: 15px;
+  display: flex;
   justify-content: center;
 }
 
@@ -38,6 +36,40 @@
   font-weight: bolder;
 }
 
+.analytics-checkmark {
+  width: 100%;
+  justify-content: center;
+}
+
+.analytics-cross-container {
+  width: 15%;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-money-container {
+  width: 10%;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-icon {
+  width: 45%;
+}
+
 .analytics-car {
   margin: 5px 0 5px 0;
+}
+
+.analytics-car-name {
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.analytics-main-container {
+  margin-left: 13vw;
+  padding-left: 1vw;
+  height: 200vh;
 }
