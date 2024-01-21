@@ -84,7 +84,7 @@
 }
 
 .analytics-customers {
-  margin: 10px;
+  margin: 15px 15px 15px 0;
 }
 
 .analytics-customers h2 {
@@ -155,7 +155,7 @@
 }
 
 .analytics-main-container {
-  margin-left: 13vw;
-  padding-left: 1.5vw;
+  margin-left: 15vw;
+  padding-left: 1vw;
   height: 240vh;
 }

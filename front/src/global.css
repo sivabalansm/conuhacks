@@ -27,7 +27,6 @@ h2 {
   font-size: 25px;
 }
 
-
 .font-small {
   font-size: 12px;
 }
@@ -89,7 +88,7 @@ h2 {
 
 .sidebar {
   height: 100%;
-  width: 13vw;
+  width: 15vw;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -119,11 +118,12 @@ h2 {
 
 .main-container-margin {
   margin: 2vh 1vw 2vh 0px;
+  padding-left: 15px;
 }
 
 .main-container {
-  margin-left: 13vw;
-  padding-left: 1.5vw;
+  margin-left: 15vw;
+  padding-left: 1vw;
   height: 100vh;
 }
 
@@ -132,6 +132,7 @@ h2 {
   align-items: center;
   vertical-align: center;
   justify-content: space-between;
+  padding-left: 15px;
 }
 
 .main-container-title-child {
