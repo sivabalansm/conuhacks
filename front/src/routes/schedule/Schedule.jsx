@@ -3,6 +3,8 @@ import { useMatch, useNavigate } from 'react-router-dom'
 
 import Row from './Row'
 import Car from './Car'
+import Chat from '../../components/Chat'
+
 import './schedule.css'
 import '../../global.css'
 
