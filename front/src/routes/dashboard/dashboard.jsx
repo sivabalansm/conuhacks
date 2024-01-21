@@ -18,11 +18,13 @@ const Dashboard = () => {
             </div>
             <div className='main-container'>
                 <div className='main-container-title'>
-                    <div className='main-container-title-child'>
-                        <h1>Today</h1>     
-                    </div>
-                    <div className='main-container-title-child'>
-                        <p>the actual date</p>
+                    <div className='flex'>
+                        <div className='main-container-title-child'>
+                            <h1>Today</h1>     
+                        </div>
+                        <div className='main-container-title-child'>
+                            <p>the actual date</p>
+                        </div>
                     </div>
                     <div className='main-container-title-child'>
                         <p>Dark Mode</p>
