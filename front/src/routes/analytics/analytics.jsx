@@ -26,18 +26,18 @@ const Analytics = () => {
                         <p>Dark Mode</p>
                     </div>
                 </div>
-                <div className='main-container-margin'>
+                <div id='total-revenue-container' className='main-container-margin'>
                     <h2>Total Revenue</h2>
                     <p id='total-revenue'>2 468 490$</p>
                 </div>
 
                 {/* Quick overview of # of accepted customers and rejected customers */}
-                <div className='main-container-margin flex'>
-                    <div className='width50 analytics-customers'>
+                <div className='flex'>
+                    <div id='customers-taken-container' className='width50 analytics-customers'>
                         <h2 id='customers-taken-text'>Customers Taken</h2>
                         <p id='customers-taken'>72</p>
                     </div>
-                    <div className='width50 analytics-customers'>
+                    <div id='customers-rejected-container' className='width50 analytics-customers'>
                         <div id='customers-rejected'>
                             <h2>Customers Rejected</h2>
                             <p className='analytics-loss'>16</p>
@@ -48,6 +48,9 @@ const Analytics = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Indented Divider */}
+                <div className='idented-divider'></div>
 
                 {/* VEHICLE TYPES CONTAINER */}
                 <div className='main-container-margin'>

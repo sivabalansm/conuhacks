@@ -30,10 +30,16 @@
 #customers-rejected {
   padding-bottom: 10px;
   margin-bottom: 10px;
+  background-color: rgb(10, 0, 255, 0.6);
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 #customers-rejected2 {
   padding: 10px;
+  background-color: rgb(10, 0, 255, 0.6);
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 #total-revenue {
@@ -56,6 +62,18 @@
 
 #walkins {
   height: 300px;
+}
+
+#total-revenue-container {
+  background-color: #b3b7f6;
+  padding-top: 3px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+#customers-taken-container {
+  background-color: rgb(10, 0, 255, 0.6);
+  border-radius: 5px;
 }
 
 .analytics-walkres-number {
@@ -81,6 +99,8 @@
   margin: 0;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px; 
+  /* pushing it a bit */
 }
 
 .analytics-customers {

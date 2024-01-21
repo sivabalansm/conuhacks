@@ -6,7 +6,7 @@
 /* ### REUSABLE CSS START ### */
 
 div {
-  border: 1.5px red solid;
+  border: 1px red solid;
 }
 
 img {
@@ -86,6 +86,15 @@ h2 {
 
 }
 
+.idented-divider {
+  height: 0;
+  border: 2px black solid;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
 .sidebar {
   height: 100%;
   width: 15vw;
@@ -118,7 +127,7 @@ h2 {
 
 .main-container-margin {
   margin: 2vh 1vw 2vh 0px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .main-container {
@@ -132,11 +141,8 @@ h2 {
   align-items: center;
   vertical-align: center;
   justify-content: space-between;
-  padding-left: 15px;
-}
-
-.main-container-title-child {
-  border: 3px green solid;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-container-row1 {
@@ -148,5 +154,9 @@ h2 {
   align-items: center;
   vertical-align: center;
 
+}
+
+.dashboard-row {
+  padding-left: 20px;
 }
 /* MAIN CONTAINER END */
