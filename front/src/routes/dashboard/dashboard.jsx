@@ -8,10 +8,12 @@ const Dashboard = () => {
     const [served, setServed] = useState(0)
     const [toserve, setToServer] = useState(47) // fake data
     const [earned, setEarned] = useState(0)
+    const [toearn, setToEarn] = useState(999) // fake data
     const [data, setData] = useState({})
     const [width, setWidth] = useState(0)
     const date = new Date('2022-10-01')
     const actualDate = new Date()
+    const progressBar = document.getElementById('progress-bar-inside')
 
     date.setUTCHours(actualDate.getUTCHours() - 1)
     date.setUTCMinutes(actualDate.getUTCMinutes())
@@ -20,23 +22,26 @@ const Dashboard = () => {
         const response = reservationServices.getFromDate()
     })
 
-    const progressBar = document.getElementById('progress-bar-inside')
-
     const handleDone = () => {
         console.log('Done button pressed')
         let tempServed = served + 1
-        let tempEarned = earned + 1
-        let tempWidth = width + 5 // 1 value may change depending on money
-        setServed(tempServed)
-        setEarned(tempEarned)
+        let fakeAppointmentRevenue = 300
+        let tempEarned = earned + fakeAppointmentRevenue
+        let ratio = (tempEarned/toearn)*100
+        let tempWidth = ratio // value may change depending on money
 
         // Locks progress bar at 100
-        if (tempWidth > 100) {
+        if (ratio > 100) {
             tempWidth = 100
+            progressBar.style.backgroundColor = '#3bba4a'
         }
+
+        setServed(tempServed)
+        setEarned(tempEarned)
         setWidth(tempWidth)
 
-        progressBar.style.width = width + '%'
+        progressBar.style.width = tempWidth + '%'
+        
     }
 
     return (
@@ -98,7 +103,7 @@ const Dashboard = () => {
                         <h2>Daily Possible Profit</h2>
                         {/* Plug-in possible daily profit */}
                         <div id='possible-profit-container'>
-                            {earned} / {}2356$
+                            {earned} / {toearn}$
                         </div>
                         <div id='progress-bar'>
                             {/* Enter percentage progress bar earned */}
