@@ -52,10 +52,13 @@ const Analytics = () => {
                 {/* Indented Divider */}
                 <div className='idented-divider'></div>
 
+
+                <div id='vehicle-types-container'>
+                    <h2>Vehicle Types</h2>
+                </div>
+
                 {/* VEHICLE TYPES CONTAINER */}
                 <div className='main-container-margin'>
-                    <h2>Vehicle Types</h2>
-
                 {/* Compact Cars */}
                     {/* Name and icon of car */}
                     <div className='flex analytics-car'>

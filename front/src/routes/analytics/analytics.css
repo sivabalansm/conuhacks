@@ -43,8 +43,9 @@
 }
 
 #total-revenue {
-  margin: 0;
-  font-size: 170px;
+  margin: -20px 0 0 0;
+  padding-bottom: 20px;
+  font-size: 150px;
   display: flex;
   justify-content: left;
 }
@@ -71,6 +72,16 @@
 #customers-taken-container {
   background-color: rgb(10, 0, 255, 0.6);
   border-radius: 5px;
+}
+
+#vehicle-types-container {
+  background-color: lightgrey;
+  margin-left: -50px;
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* normal padding left is 20px so 50+20 */
+  
 }
 
 .analytics-walkres-number {
@@ -172,6 +183,6 @@
 
 .analytics-main-container {
   margin-left: 15vw;
-  padding-left: 1vw;
+  padding-left: 2vw;
   height: 240vh;
 }

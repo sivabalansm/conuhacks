@@ -5,9 +5,9 @@
 
 /* ### REUSABLE CSS START ### */
 
-div {
+/* div {
   border: 1px red solid;
-}
+} */
 
 img {
   user-select: none;
@@ -89,9 +89,7 @@ h2 {
 .idented-divider {
   height: 0;
   border: 2px black solid;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 10px;
+  margin: 30px 30% 30px 30%;
   opacity: 0.5;
 }
 
@@ -132,7 +130,7 @@ h2 {
 
 .main-container {
   margin-left: 15vw;
-  padding-left: 1vw;
+  padding-left: 2vw;
   height: 100vh;
 }
 
