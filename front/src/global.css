@@ -93,7 +93,15 @@ h2 {
   font-size: 21px;
   display: flex;
   align-items: center;
+  border: none;
+  color: white;
+  -webkit-user-drag: none;
 
+  text-decoration: none
+}
+
+.sidebar-title:visited {
+  color:white;
 }
 
 .indented-divider {
@@ -120,12 +128,20 @@ h2 {
 }
 
 .sidebar-item {
-  padding: 5px 0px 5px 15px;
+  -webkit-user-drag: none;
+  padding: 10px 0px 10px 15px;
   text-decoration: none;
   font-size: 16px;
   color: #eae9fc;
   display: block;
+
+  transition: all 0.25s;
 }
+
+.sidebar-item:hover {
+  background-color: rgb(115, 115, 115);
+}
+
 /* SIDEBAR END */
 /* MAIN CONTAINER START */
 .main-container {

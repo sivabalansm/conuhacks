@@ -42,10 +42,10 @@ const Dashboard = () => {
     return (
         <>
             <div className = 'sidebar'>
-                <div className = 'sidebar-title'>
-                    <img id="logo" src="../../assets/gear.svg" alt=""/>
+                <Link className='sidebar-title' to='/'>
+                    <img id="logo" src="../../assets/gear.svg" alt="logo"/>
                     <p>SAPMechanic</p>
-                </div>
+                </Link>
                 <div className='sidebar-group'>
                     <Link className='sidebar-item' to='/'>Dashboard</Link>
                     <Link className='sidebar-item' to='/schedule'>Schedule</Link>
@@ -56,7 +56,7 @@ const Dashboard = () => {
                 <div className='main-container-title'>
                     <div className='flex'>
                         <div className='main-container-title-child'>
-                            <h1 id='today-title'><span>Today's date: {date.toUTCString().slice(0, 16)}</span></h1>     
+                            <h1 id='today-title'><span>{date.toUTCString().slice(0, 16)}</span></h1>     
                         </div>
                     </div>
                 </div>
