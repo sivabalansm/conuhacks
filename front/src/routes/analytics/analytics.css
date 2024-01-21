@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Robinson";
+  src: url("../../assets/Robinson-Regular.otf");
+}
+
+#total-revenue {
+  height: 30vh
+}
+
+#walkins {
+  height: 20vh;
+}
+
+#reservations {
+  
+}
+
+#most-profitable-vehicle {
+  height: 20vh;
+}
+
+#least-profitable-vehicle {
+  
+}
+
+#customers-taken-text {
+  
+}
+
+#customers-taken {
+  border: 3px blue solid;
+  margin: 0;
+  font-size: 300px;
+  font-family: 'Robinson';
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-customers {
+  margin: 10px;
+}
+
+.analytics-car-item {
+  width: 22.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-car-item2 {
+  width: 22.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analytics-checkmark-container {
+  width: 12%;
+  margin-left: 15px;
+  margin-right: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-checkmark-text {
+  font-size: 21px;
+  font-weight: bolder;
+  margin-left: 30%;
+}
+
+.analytics-checkmark {
+  width: 100%;
+  justify-content: center;
+}
+
+.analytics-cross-container {
+  width: 15%;
+  margin-left: 15px;
+  margin-right: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-money-container {
+  width: 8%;
+  margin-left: 15px;
+  margin-right: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-icon {
+  width: 45%;
+}
+
+.analytics-car {
+  margin: 5px 0 5px 0;
+}
+
+.analytics-car-name {
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.analytics-main-container {
+  margin-left: 13vw;
+  padding-left: 1vw;
+  height: 200vh;
+}
