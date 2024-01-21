@@ -19,16 +19,51 @@ const Dashboard = () => {
     date.setUTCHours(actualDate.getUTCHours() - 1)
     date.setUTCMinutes(actualDate.getUTCMinutes())
 
+    const profit = {
+        'compact': 150,
+        'medium': 150,
+        'full-size': 150,
+        'class 1 truck': 250,
+        'class 2 truck': 700
+    }
+
+    const [reservations, setReservations] = useState([])
+    const [totalRevenue, setTotalRevenue] = useState(0)
+    const [rejects, setRejects] = useState([])
+
+
     useEffect(() => {
         const init = async () => {
-            const response = await reservationServices.getFromDate()
-            const initialCars = response[0].reservations
+            const newYear = date.getUTCFullYear()
+            const newMonth = String(date.getUTCMonth() + 1).padStart(2, '0')
+            const newDay = String(date.getUTCDate()).padStart(2, '0')
 
-            setCars(initialCars)
-            setToServe(initialCars.length)
+            let rs = await reservationServices.getFromDate(`${newYear}-${newMonth}-${newDay}`)
+            rs = rs[0].reservations
+            const initialReservations = rs.filter(r => !r.reject)
+            const temp_rejects = rs.filter(r => r.reject) 
+            setReservations(initialReservations)
+            setRejects(temp_rejects)
         }
         init()
-    })
+    }, [])
+
+        useEffect(() => {
+            const init = () => {
+                let newTotalRevenue = 0
+                reservations.forEach(reservation => {
+                    newTotalRevenue += profit[reservation.type]
+                })
+
+                setTotalRevenue(newTotalRevenue)
+            }
+            if (!reservations) {
+                return null
+            } else {
+                init()
+            }
+            
+        }, [reservations])
 
     const handleDone = () => {
         console.log('Done button pressed')
@@ -87,29 +122,21 @@ const Dashboard = () => {
                                     <button className='done-button' onClick={handleDone}>done</button>
                                 </div>
                             })} */}
-                            {/* List all items here, preferably in the following layout. All info goes in one <p></p>. Please only show first five appointments so list doesn't get too long!!!*/}
-                            <div className='schedule-item'>
-                                <p>placeholder</p>
-                                <button className='done-button' onClick={handleDone}>done</button>
-                            </div>
-                            <div className='schedule-item'>
-                                <p>placeholder</p>
-                                <button className='done-button' onClick={handleDone}>done</button>
-                            </div>
-                            <div className='schedule-item'>
-                                <p>placeholder</p>
-                                <button className='done-button' onClick={handleDone}>done</button>
-                            </div>
-                            <div className='schedule-item'>
-                                <p>placeholder</p>
-                                <button className='done-button' onClick={handleDone}>done</button>
-                            </div>
+                            {reservations.slice(0, 5).map((car) => {
+                                return (
+                                    <div className='schedule-item'>
+                                        <p>{car.type} {profit[car.type]}$ {car.time}</p>
+                                        <button className='done-button' onClick={handleDone}>done</button>
+                                    </div>
+                                )
+                            })
+                            }
                         </div>
                     </div>
                     <div id='daily-customers-done-ratio'>
                         <h2 className='flex flex-horizontal-center'>Customers Served</h2>
                         {/* Here, plug in # of served people and # of people to serve during that day */}
-                        <p id='served'>{served} / {toServe}</p>
+                        <p id='served'>{served} / {reservations.length}</p>
                     </div>
                 </div>
                 <div className='dashboard-row2'>
@@ -128,7 +155,7 @@ const Dashboard = () => {
                     <div id='daily-customers-rejected'>
                         <h2 className='flex flex-horizontal-center'>Daily Customers Rejected</h2>
                         {/* Plug-in daily customers rejected */}
-                        <p id='rejected'>9</p>
+                        <p id='rejected'>{rejects.length}</p>
                     </div>
                 </div>
             </div>
