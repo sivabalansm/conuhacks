@@ -7,6 +7,7 @@ import './chat.css'
 
 const Chat = () => {
     const [chatToggle, setChatToggle] = useState(false)
+    const [messages, setMessages] = useState([])
 
     const toggleChat = () => {
         setChatToggle(!chatToggle)
@@ -15,7 +16,7 @@ const Chat = () => {
     return (
         <div id='chat'>
             {chatToggle
-                ? <ChatBox toggleChat={toggleChat} />
+                ? <ChatBox toggleChat={toggleChat} messages={messages} setMessages={setMessages} />
                 : <ChatButton toggleChat={toggleChat} />
             }
         </div>

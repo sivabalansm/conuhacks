@@ -18,6 +18,8 @@
     bottom: 80px;
     width: 320px;
     height: 80vh;
+    border: 1px solid black;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,6 +27,7 @@
 
 #chat-header {
     padding: 10px;
+    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     height: 45px;
@@ -59,20 +62,101 @@
 #minimize-button, #close-button {
     height: 24px;
     width: 24px;
+    padding: 6px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 150ms ease 0s;
+}
+
+#minimize-button:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+#close-button:hover {
+    background-color: rgba(200, 0, 0, 0.15);
 }
 
 #chat-messages {
     height: 100%;
-    overflow: scroll;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 10px;
+}
+
+.message {
+    background-color: rgb(240, 240, 240);
+    color: rgba(0, 0, 0, 0.85);
+    width: fit-content;
+    border-radius: 20px;
+    padding: 10px 14px;
+    margin: 3px 0;
+    line-height: 1.25;
+    font-size: 1rem;
+    word-break: break-word;
+    white-space: pre-wrap;
+    box-sizing: border-box;
 }
 
 #chat-input {
-    height: 36px;
+    height: 48px;
     width: 100%;
     box-sizing: border-box;
     padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 16px;
     border: 0;
+    border-top: 1px solid black;
+    transition: all 150ms ease 0s;
+}
+
+#confirm-box {
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    right: 80px;
+    bottom: 80px;
+    width: 320px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 10px 0 20px 0;
+}
+
+#confirm-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.confirm-button {
+    padding: 8px;  
+    margin: 0 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+#end-button {
+    background-color: #e12d51;
+    color: white;
+}
+
+#end-button:hover {
+    background-color: rgb(205, 35, 71);
+}
+
+#cancel-button:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+#grey-screen {
+    position: fixed;
+    background: #00000040;
+    border: 1px solid black;
+    right: 80px;
+    bottom: 80px;
+    width: 320px;
+    height: 80vh;
+    border-radius: 8px;
 }

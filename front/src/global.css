@@ -5,10 +5,6 @@
 
 /* ### REUSABLE CSS START ### */
 
-div {
-  border: 1.5px red solid;
-}
-
 img {
   user-select: none;
   -webkit-user-drag: none;

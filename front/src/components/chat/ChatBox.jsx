@@ -1,16 +1,23 @@
 import { useState } from 'react'
 
 import Message from './Message'
+import Confirm from './Confirm'
 
-const ChatBox = ({ toggleChat }) => {
+const ChatBox = ({ messages, setMessages, toggleChat }) => {
     const [message, setMessage] = useState('')
-    const [messages, setMessages] = useState([])
+    const [confirm, setConfirm] = useState(false)
 
     const minimize = () => {
         toggleChat()
     }
+
+    const toggleConfirm = () => {
+        setConfirm(!confirm)
+    }
     
     const close = () => {
+        toggleConfirm()
+        setMessages([])
         toggleChat()
     }
 
@@ -25,6 +32,9 @@ const ChatBox = ({ toggleChat }) => {
             message,
             user: 'human'
         }))
+
+        console.log(messages)
+
         setMessage('')
     }
 
@@ -41,7 +51,7 @@ const ChatBox = ({ toggleChat }) => {
                             <path d="M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z"></path>
                         </svg>
                     </span>
-                    <span id='close-button' onClick={close}>
+                    <span id='close-button' onClick={toggleConfirm}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path>
                         </svg>
@@ -52,8 +62,11 @@ const ChatBox = ({ toggleChat }) => {
                 {messages.map(m => <Message message={m.message} user={m.user} />)}
             </div>
             <form onSubmit={sendMessage}>
-                <input value={message} onChange={handleChange} id='chat-input'></input>
+                <input value={message} onChange={handleChange} placeholder='Message...' id='chat-input'></input>
             </form>
+            { 
+                confirm && <Confirm toggleConfirm={toggleConfirm} close={close} />
+            }
 
         </div>
     )

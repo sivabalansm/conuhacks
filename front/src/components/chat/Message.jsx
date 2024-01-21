@@ -1,6 +1,15 @@
-const Message = ({ message, type }) => {
+const Message = ({ message, user }) => {
+    const messageStyle = user == 'human'
+        ? {
+            marginLeft: 'auto',
+            marginRight: 24,
+            backgroundColor: '#eaeaf9'
+        } : {
+            
+        }
+
     return (
-        <div>
+        <div className="message" style={messageStyle}>
             {message}
         </div>
     )
