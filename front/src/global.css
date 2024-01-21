@@ -5,6 +5,10 @@
 
 /* ### REUSABLE CSS START ### */
 
+div {
+  border: 1px red solid;
+}
+
 img {
   user-select: none;
   -webkit-user-drag: none;
@@ -16,13 +20,13 @@ body {
 }
 
 h1 {
+  text-decoration: underline;
   font-size: 38px;
 }
 
 h2 {
   font-size: 25px;
 }
-
 
 .font-small {
   font-size: 12px;
@@ -69,7 +73,6 @@ h2 {
 /* SIDEBAR */
 
 #logo {
-  border: 1px blue solid;
   height: 30px;
   margin-left: 15px;
   margin-right: 5px; 
@@ -84,9 +87,17 @@ h2 {
 
 }
 
+.indented-divider {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  margin: 30px 30% 40px 30%;
+  opacity: 0.5;
+}
+
 .sidebar {
   height: 100%;
-  width: 13vw;
+  width: 15vw;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -116,11 +127,12 @@ h2 {
 
 .main-container-margin {
   margin: 2vh 1vw 2vh 0px;
+  padding-left: 20px;
 }
 
 .main-container {
-  margin-left: 13vw;
-  padding-left: 1vw;
+  margin-left: 15vw;
+  padding-left: 2vw;
   height: 100vh;
 }
 
@@ -128,21 +140,26 @@ h2 {
   display: flex;
   align-items: center;
   vertical-align: center;
-
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.main-container-title-child {
-  border: 3px green solid;
+.main-container-title-child h1 {
+  margin-bottom: 9px;
 }
 
 .main-container-row1 {
   display: flex;
 }
 
-.main-container-title {
-  display: flex;
-  align-items: center;
-  vertical-align: center;
-
+.dashboard-row {
+  padding-left: 20px;
 }
 /* MAIN CONTAINER END */
+
+/* Lazy fixes :(((( it's not clean but we don't have much time */
+
+.fix1 {
+  margin-top: -10px;
+}

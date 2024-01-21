@@ -9,7 +9,13 @@ primary: #3c6dff
 
 secondary: #b3b7f6
 
-accent: #d79435
+accent1 (brown): #d79435 or 215, 148, 53
+different opacities: 0.5,
+
+accent2 (purp): #8300ff or 131, 0, 255
+different opacities: 0.6,
+
+accent3 (more blue): 10, 0, 255 or #0a00ff
 
 error: #DB3E3E
 

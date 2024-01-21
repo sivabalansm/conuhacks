@@ -9,10 +9,9 @@
 
 #walkins {
   height: 20vh;
-}
-
-#reservations {
-  
+  margin: 15px 15px 15px 0;
+  border-radius: 5px;
+  background-color: #b3b7f6;
 }
 
 #most-profitable-vehicle {
@@ -23,21 +22,103 @@
   
 }
 
-#customers-taken-text {
-  
+
+#customers-rejected {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(10, 0, 255, 0.6);
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+#customers-rejected2 {
+  padding: 10px;
+  background-color: rgb(10, 0, 255, 0.6);
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+#total-revenue {
+  margin: -20px 0 0 0;
+  padding-bottom: 20px;
+  font-size: 150px;
+  display: flex;
+  justify-content: left;
 }
 
 #customers-taken {
-  border: 3px blue solid;
-  margin: 0;
-  font-size: 300px;
-  font-family: 'Robinson';
+  margin-top: 10%;
+  margin-bottom: 0;
+  font-size: 140px;
   display: flex;
   justify-content: center;
 }
 
+#walkins {
+  height: 300px;
+}
+
+#total-revenue-container {
+  background-color: #b3b7f6;
+  padding-top: 3px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+#customers-taken-container {
+  background-color: rgb(10, 0, 255, 0.6);
+  border-radius: 5px;
+}
+
+#vehicle-types-container {
+  background-color: lightgrey;
+  margin-left: -50px;
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid darkgrey;
+  /* normal padding left is 20px so 50+20 */
+  
+}
+
+#reservations {
+  margin: 15px 15px 15px 0;
+  border-radius: 5px;
+  background-color: #b3b7f6;
+}
+
+.analytics-walkres-number {
+  font-size: 70px;
+  margin: 0 20px 0 20px;
+}
+
+.analytics-walk-res-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10% 40% 0 40%;
+}
+
+.analytics-walk-res-icons {
+  height: 50px;
+}
+
+.analytics-loss {
+  font-size: 70px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px; 
+  /* pushing it a bit */
+}
+
 .analytics-customers {
-  margin: 10px;
+  margin: 15px 15px 15px 0;
+}
+
+.analytics-customers h2 {
+  display: flex;
+  justify-content: center;
 }
 
 .analytics-car-item {
@@ -94,7 +175,12 @@
 }
 
 .analytics-car {
-  margin: 5px 0 5px 0;
+  border-bottom: 2px rgb(128, 128, 128, 0.25) solid;
+  background-color: rgb(212, 212, 212, 0.25);
+  /* fix */
+  margin-left: -50px;
+  padding-left: 30px;
+  
 }
 
 .analytics-car-name {
@@ -103,7 +189,7 @@
 }
 
 .analytics-main-container {
-  margin-left: 13vw;
-  padding-left: 1vw;
-  height: 200vh;
+  margin-left: 15vw;
+  padding-left: 2vw;
+  height: 100%;
 }

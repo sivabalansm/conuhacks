@@ -8,7 +8,7 @@ const Dashboard = () => {
             <div className = 'sidebar'>
                 <div className = 'sidebar-title'>
                     <img id="logo" src="../../assets/gear.svg" alt=""/>
-                    <p>Repair Shop</p>
+                    <p>SAPMechanic</p>
                 </div>
                 <div className='sidebar-group'>
                     <Link className='sidebar-item' to='/'>Dashboard</Link>
@@ -18,18 +18,15 @@ const Dashboard = () => {
             </div>
             <div className='main-container'>
                 <div className='main-container-title'>
-                    <div className='main-container-title-child'>
-                        <h1>Today</h1>     
-                    </div>
-                    <div className='main-container-title-child'>
-                        <p>the actual date</p>
-                    </div>
-                    <div className='main-container-title-child'>
-                        <p>Dark Mode</p>
+                    <div className='flex'>
+                        <div className='main-container-title-child'>
+                            <h1><span>Put actual date here</span></h1>     
+                        </div>
                     </div>
                 </div>
                 <div className='dashboard-row'>
                     <div id='daily-upcoming-schedules'>
+                        {/* Plug-in upcoming schedules as a list of items */}
                         Daily Upcoming Schedules
                     </div>
                     <div id='daily-customers-done-ratio'>
@@ -38,10 +35,15 @@ const Dashboard = () => {
                 </div>
                 <div className='dashboard-row'>
                     <div id='daily-possible-profit'>
+                        {/* Plug-in possible daily profit */}
                         Daily Possible Profit
                     </div>
                     <div id='daily-customers-rejected'>
+                        {/* Plug-in daily customers rejected */}
                         Daily Customers Rejected
+                        <div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>

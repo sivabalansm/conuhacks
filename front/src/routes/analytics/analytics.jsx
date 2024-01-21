@@ -8,7 +8,7 @@ const Analytics = () => {
             <div className = 'sidebar'>
                 <div className = 'sidebar-title'>
                     <img id="logo" src="../../assets/gear.svg" alt=""/>
-                    <p>Repair Shop</p>
+                    <p>SAPMechanic</p>
                 </div>
                 <div className='sidebar-group'>
                     <Link className='sidebar-item' to='/'>Dashboard</Link>
@@ -22,34 +22,58 @@ const Analytics = () => {
                     <div className='main-container-title-child'>
                         <h1>Analytics</h1>     
                     </div>
-                    <div className='main-container-title-child'>
-                        <p>Dark Mode</p>
-                    </div>
                 </div>
-                <div className='main-container-margin' id="total-revenue">
-                    Total Revenue
+                <p>An overview of the statistics taken from the current batch of reservations. </p>
+                <div id='total-revenue-container' className='main-container-margin'>
+                    <h2>Total Revenue</h2>
+                    <p id='total-revenue'>2 468 490$</p>
                 </div>
 
                 {/* Quick overview of # of accepted customers and rejected customers */}
-                <div className='main-container-margin flex'>
-                    <div className='width50 analytics-customers'>
-                        <h2 id='customers-taken-text'>Customers Taken Today</h2>
+                <div className='flex'>
+                    <div id='customers-taken-container' className='width50 analytics-customers'>
+                        <h2>Customers Taken</h2>
                         <p id='customers-taken'>72</p>
                     </div>
                     <div className='width50 analytics-customers'>
-                        <div>
+                        <div id='customers-rejected'>
                             <h2>Customers Rejected</h2>
+                            <p className='analytics-loss'>16</p>
                         </div>
-                        <div>
+                        <div id='customers-rejected2'>
                             <h2>Potential Revenue Lost</h2>
+                            <p className='analytics-loss'>9000$</p>
                         </div>
                     </div>
                 </div>
 
-                {/* VEHICLE TYPES CONTAINER */}
-                <div className='main-container-margin'>
-                    <h2>Vehicle Types</h2>
+                {/* Number of walkins vs number of reservations */}
+                <div className='flex fix1'>
+                    <div className='width50' id='walkins'>
+                        <h2 className='flex flex-horizontal-center'>Walk-ins</h2>
+                        <div className='analytics-walk-res-container'>
+                            <p className='analytics-walkres-number'>56</p>
+                            <img className='analytics-walk-res-icons' src='../../assets/walking.svg' alt='walking-man'/>
+                        </div>
+                    </div>
+                    <div className='width50' id='reservations'>
+                        <h2 className='flex flex-horizontal-center'>Reservations</h2>
+                        <div className='analytics-walk-res-container'>
+                            <p className='analytics-walkres-number'>10</p>
+                            <img className='analytics-walk-res-icons' src='../../assets/calendar.svg' alt='walking-man'/>
+                        </div>
+                    </div>
+                </div>
 
+                {/* Indented Divider */}
+                <div className='indented-divider'>/////////////////////////////////////////////////////////////////////////////</div>                
+
+                <div id='vehicle-types-container'>
+                    <h2>Customers Served/Rejected and Revenue per Vehicle Type</h2>
+                </div>
+
+                {/* VEHICLE TYPES CONTAINER */}
+                <div>
                 {/* Compact Cars */}
                     {/* Name and icon of car */}
                     <div className='flex analytics-car'>
@@ -60,7 +84,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Compact car</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>200</p>
                             <div className='analytics-checkmark-container'>
@@ -68,7 +92,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>12</p>
                             <div className='analytics-cross-container'>
@@ -95,7 +119,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Medium car</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>79</p>
                             <div className='analytics-checkmark-container'>
@@ -103,7 +127,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>12</p>
                             <div className='analytics-cross-container'>
@@ -130,7 +154,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Full-size car</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>2</p>
                             <div className='analytics-checkmark-container'>
@@ -138,7 +162,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>10</p>
                             <div className='analytics-cross-container'>
@@ -165,7 +189,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Class 1 Truck</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>9</p>
                             <div className='analytics-checkmark-container'>
@@ -173,7 +197,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>2</p>
                             <div className='analytics-cross-container'>
@@ -200,7 +224,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Class 2 Truck</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>10</p>
                             <div className='analytics-checkmark-container'>
@@ -208,11 +232,11 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>4</p>
                             <div className='analytics-cross-container'>
-                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
+                                <img className='analytics-checkmark' src='../../assets/cross.svg' alt='cross'/>
                             </div>
                         </div>
 
@@ -220,20 +244,9 @@ const Analytics = () => {
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>22098$</p>
                             <div className='analytics-money-container'>
-                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt=''/>
+                                <img className='analytics-checkmark' src='../../assets/money2.svg' alt='money'/>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-
-                {/* Number of walkins vs number of reservations */}
-                <div className='main-container-margin flex'>
-                    <div className='width50' id='walkins'>
-                        walkins
-                    </div>
-                    <div className='width50' id='reservations'>
-                        reservations
                     </div>
                 </div>
             </div>
