@@ -69,6 +69,7 @@ const Schedule = () => {
           <img id="logo" src="../../assets/gear.svg" alt="logo"/>
           <p>SAPMechanic</p>
         </Link>
+        <div className='indented-divider2'></div>
         <div className='sidebar-group'>
             <Link className='sidebar-item' to='/'>Dashboard</Link>
             <Link className='sidebar-item' to='/schedule'>Schedule</Link>
