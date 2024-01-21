@@ -9,6 +9,8 @@ primary: #3c6dff
 
 secondary: #b3b7f6
 
+light (grey): rgb(148, 148, 148, 0.5)
+
 accent1 (brown): #d79435 or 215, 148, 53
 different opacities: 0.5,
 
