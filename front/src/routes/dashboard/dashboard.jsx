@@ -37,13 +37,19 @@ const Dashboard = () => {
                     <div id='daily-possible-profit'>
                         {/* Plug-in possible daily profit */}
                         Daily Possible Profit
+                        <div>
+                            {}0 / 2356$
+                        </div>
+                        <div id='progress-bar'>
+                            <div id='progress-bar-inside'>
+                                {}Enter percentage here
+                            </div>
+                        </div>
                     </div>
                     <div id='daily-customers-rejected'>
                         {/* Plug-in daily customers rejected */}
                         Daily Customers Rejected
-                        <div>
-                            
-                        </div>
+
                     </div>
                 </div>
             </div>
