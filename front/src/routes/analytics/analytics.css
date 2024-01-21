@@ -27,17 +27,50 @@
   
 }
 
-#customers-taken {
+#customers-rejected {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#customers-rejected2 {
+  padding: 10px;
+}
+
+#total-revenue {
   border: 3px blue solid;
   margin: 0;
-  font-size: 300px;
+  font-size: 170px;
   font-family: 'Robinson';
+  display: flex;
+  justify-content: left;
+}
+
+#customers-taken {
+  border: 3px blue solid;
+  margin-top: 10%;
+  margin-bottom: 0;
+  font-size: 140px;
+  font-family: 'Robinson';
+
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-loss {
+  font-family: 'Robinson';
+  font-size: 70px;
+  margin: 0;
   display: flex;
   justify-content: center;
 }
 
 .analytics-customers {
   margin: 10px;
+}
+
+.analytics-customers h2 {
+  display: flex;
+  justify-content: center;
 }
 
 .analytics-car-item {
@@ -105,5 +138,5 @@
 .analytics-main-container {
   margin-left: 13vw;
   padding-left: 1vw;
-  height: 200vh;
+  height: 250vh;
 }

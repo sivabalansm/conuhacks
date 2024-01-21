@@ -26,22 +26,25 @@ const Analytics = () => {
                         <p>Dark Mode</p>
                     </div>
                 </div>
-                <div className='main-container-margin' id="total-revenue">
-                    Total Revenue
+                <div className='main-container-margin'>
+                    <h2>Total Revenue</h2>
+                    <p id='total-revenue'>2 468 490$</p>
                 </div>
 
                 {/* Quick overview of # of accepted customers and rejected customers */}
                 <div className='main-container-margin flex'>
                     <div className='width50 analytics-customers'>
-                        <h2 id='customers-taken-text'>Customers Taken Today</h2>
+                        <h2 id='customers-taken-text'>Customers Taken</h2>
                         <p id='customers-taken'>72</p>
                     </div>
                     <div className='width50 analytics-customers'>
-                        <div>
+                        <div id='customers-rejected'>
                             <h2>Customers Rejected</h2>
+                            <p className='analytics-loss'>16</p>
                         </div>
-                        <div>
+                        <div id='customers-rejected2'>
                             <h2>Potential Revenue Lost</h2>
+                            <p className='analytics-loss'>9000$</p>
                         </div>
                     </div>
                 </div>
@@ -230,10 +233,10 @@ const Analytics = () => {
                 {/* Number of walkins vs number of reservations */}
                 <div className='main-container-margin flex'>
                     <div className='width50' id='walkins'>
-                        walkins
+                        <h2>Walk-ins</h2>
                     </div>
                     <div className='width50' id='reservations'>
-                        reservations
+                        <h2>Reservations</h2>
                     </div>
                 </div>
             </div>
