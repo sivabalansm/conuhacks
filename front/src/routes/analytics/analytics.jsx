@@ -69,7 +69,7 @@ const Analytics = () => {
                 <div className='indented-divider'>/////////////////////////////////////////////////////////////////////////////</div>                
 
                 <div id='vehicle-types-container'>
-                    <h2>Vehicle Types</h2>
+                    <h2>Customers Served/Rejected and Revenue per Vehicle Type</h2>
                 </div>
 
                 {/* VEHICLE TYPES CONTAINER */}
