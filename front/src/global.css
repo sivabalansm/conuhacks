@@ -152,9 +152,6 @@ h2 {
   display: flex;
 }
 
-.dashboard-row {
-  padding: 0;
-}
 /* MAIN CONTAINER END */
 
 /* Lazy fixes :(((( it's not clean but we don't have much time */

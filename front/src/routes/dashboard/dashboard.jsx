@@ -39,9 +39,30 @@ const Dashboard = () => {
                 <div className='dashboard-row'>
                     <div id='daily-upcoming-schedules'>
                         {/* Plug-in upcoming schedules as a list of items */}
-                        <h2>Daily Upcoming Schedules</h2>
-                        <div className='schedule-item'>
-                            <p>placeholder <button onClick={handleDone}>done</button></p>
+                        <div>
+                            <h2>Daily Upcoming Schedules</h2>
+                        </div>
+                        <div id='schedule-item-container'>
+                            <div className='schedule-item'>
+                                <p>placeholder</p>
+                                <button className='done-button' onClick={handleDone}>done</button>
+                            </div>
+                            <div className='schedule-item'>
+                                <p>placeholder</p>
+                                <button className='done-button' onClick={handleDone}>done</button>
+                            </div>
+                            <div className='schedule-item'>
+                                <p>placeholder</p>
+                                <button className='done-button' onClick={handleDone}>done</button>
+                            </div>
+                            <div className='schedule-item'>
+                                <p>placeholder</p>
+                                <button className='done-button' onClick={handleDone}>done</button>
+                            </div>
+                            <div className='schedule-item'>
+                                <p>placeholder</p>
+                                <button className='done-button' onClick={handleDone}>done</button>
+                            </div>
                         </div>
                     </div>
                     <div id='daily-customers-done-ratio'>
@@ -49,7 +70,7 @@ const Dashboard = () => {
                         <p>{served} / {toserve}</p>
                     </div>
                 </div>
-                <div className='dashboard-row'>
+                <div className='dashboard-row2'>
                     <div id='daily-possible-profit'>
                         {/* Plug-in possible daily profit */}
                         <h2>Daily Possible Profit</h2>
