@@ -5,7 +5,6 @@ dateRouter.get('/', async (request, response) => {
   const dates = await Date
     .find({}).populate({
         path: 'reservations',
-        match: { reject: false }, 
     })
   response.json(dates)
 })

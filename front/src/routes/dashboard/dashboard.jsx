@@ -6,10 +6,11 @@ import reservationServices from '../../services/reservation'
 
 const Dashboard = () => {
     const [served, setServed] = useState(0)
-    const [toserve, setToServer] = useState(47) // fake data
+    const [toServe, setToServe] = useState(0) // fake data
     const [earned, setEarned] = useState(0)
     const [toearn, setToEarn] = useState(999) // fake data
     const [data, setData] = useState({})
+    const [cars, setCars] = useState({})
     const [width, setWidth] = useState(0)
     const date = new Date('2022-10-01')
     const actualDate = new Date()
@@ -19,7 +20,14 @@ const Dashboard = () => {
     date.setUTCMinutes(actualDate.getUTCMinutes())
 
     useEffect(() => {
-        const response = reservationServices.getFromDate()
+        const init = async () => {
+            const response = await reservationServices.getFromDate()
+            const initialCars = response[0].reservations
+
+            setCars(initialCars)
+            setToServe(initialCars.length)
+        }
+        init()
     })
 
     const handleDone = () => {
@@ -73,6 +81,12 @@ const Dashboard = () => {
                             <h2>Daily Upcoming Schedules</h2>
                         </div>
                         <div id='schedule-item-container'>
+                            {/* {cars.slice(0, 5).map((car) => {
+                                <div className='schedule-item'>
+                                    <p>placeholder</p>
+                                    <button className='done-button' onClick={handleDone}>done</button>
+                                </div>
+                            })} */}
                             {/* List all items here, preferably in the following layout. All info goes in one <p></p>. Please only show first five appointments so list doesn't get too long!!!*/}
                             <div className='schedule-item'>
                                 <p>placeholder</p>
@@ -95,7 +109,7 @@ const Dashboard = () => {
                     <div id='daily-customers-done-ratio'>
                         <h2 className='flex flex-horizontal-center'>Customers Served</h2>
                         {/* Here, plug in # of served people and # of people to serve during that day */}
-                        <p id='served'>{served} / {toserve}</p>
+                        <p id='served'>{served} / {toServe}</p>
                     </div>
                 </div>
                 <div className='dashboard-row2'>

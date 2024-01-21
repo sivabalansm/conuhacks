@@ -24,12 +24,22 @@ const Analytics = () => {
     const [totalFullSize, setTotalFullSize] = useState(0)
     const [totalTruck1, setTotalTruck1] = useState(0)
     const [totalTruck2, setTotalTruck2] = useState(0)
+    const [r_totalCompact, r_setTotalCompact] = useState(0)
+    const [r_totalMedium, r_setTotalMedium] = useState(0)
+    const [r_totalFullSize, r_setTotalFullSize] = useState(0)
+    const [r_totalTruck1, r_setTotalTruck1] = useState(0)
+    const [r_totalTruck2, r_setTotalTruck2] = useState(0)
+    const [rejects, setRejects] = useState([])
+    const [lostRevenue, setLostRevenue] = useState(0)
 
 
     useEffect(() => {
         const init = async () => {
-            const initialReservations = await reservationServices.getAll()
+            const rs = await reservationServices.getAll()
+            const initialReservations = rs.filter(r => !r.reject)
+            const temp_rejects = rs.filter(r => r.reject) 
             setReservations(initialReservations)
+            setRejects(temp_rejects)
         }
         init()
     }, [])
@@ -38,7 +48,15 @@ const Analytics = () => {
         const init = () => {
             let newTotalRevenue = 0
             let newTotalCustomers = 0
+            let newLoss = 0
             let count = {
+                'compact': 0,
+                'medium': 0,
+                'full-size': 0,
+                'class 1 truck': 0,
+                'class 2 truck': 0
+            }
+            let r_count = {
                 'compact': 0,
                 'medium': 0,
                 'full-size': 0,
@@ -51,6 +69,11 @@ const Analytics = () => {
                 count[reservation.type] += 1
                 setTotalCustomers(newTotalCustomers)
             })
+            rejects.forEach(reservation => {
+                newLoss += profit[reservation.type]
+                r_count[reservation.type] += 1
+            })
+
             setTotalRevenue(newTotalRevenue)
             setTotalCustomers(newTotalCustomers)
             setTotalCompact(count['compact'])
@@ -58,7 +81,12 @@ const Analytics = () => {
             setTotalFullSize(count['full-size'])
             setTotalTruck1(count['class 1 truck'])
             setTotalTruck2(count['class 2 truck'])
-
+            r_setTotalCompact(r_count['compact'])
+            r_setTotalMedium(r_count['medium'])
+            r_setTotalFullSize(r_count['full-size'])
+            r_setTotalTruck1(r_count['class 1 truck'])
+            r_setTotalTruck2(r_count['class 2 truck'])
+            setLostRevenue(newLoss)
         }
         if (!reservations) {
             return null
@@ -104,11 +132,11 @@ const Analytics = () => {
                     <div className='width50 analytics-customers'>
                         <div id='customers-rejected'>
                             <h2>Customers Rejected</h2>
-                            <p className='analytics-loss'>16</p>
+                            <p className='analytics-loss'>{rejects.length}</p>
                         </div>
                         <div id='customers-rejected2'>
                             <h2>Potential Revenue Lost</h2>
-                            <p className='analytics-loss'>9000$</p>
+                            <p className='analytics-loss'>{lostRevenue}$</p>
                         </div>
                     </div>
                 </div>
@@ -118,14 +146,14 @@ const Analytics = () => {
                     <div className='width50' id='walkins'>
                         <h2 className='flex flex-horizontal-center'>Walk-ins</h2>
                         <div className='analytics-walk-res-container'>
-                            <p className='analytics-walkres-number'>56</p>
+                            <p className='analytics-walkres-number'>{reservations.filter(r => r.walkIn).length}</p>
                             <img className='analytics-walk-res-icons' src='../../assets/walking.svg' alt='walking-man'/>
                         </div>
                     </div>
                     <div className='width50' id='reservations'>
                         <h2 className='flex flex-horizontal-center'>Reservations</h2>
                         <div className='analytics-walk-res-container'>
-                            <p className='analytics-walkres-number'>10</p>
+                            <p className='analytics-walkres-number'>{reservations.filter(r => !r.walkIn).length}</p>
                             <img className='analytics-walk-res-icons' src='../../assets/calendar.svg' alt='walking-man'/>
                         </div>
                     </div>
@@ -160,7 +188,7 @@ const Analytics = () => {
 
                         {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>12</p>
+                            <p className='analytics-checkmark-text'>{r_totalCompact}</p>
                             <div className='analytics-cross-container'>
                                 <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
                             </div>
@@ -195,7 +223,7 @@ const Analytics = () => {
 
                         {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>12</p>
+                            <p className='analytics-checkmark-text'>{r_totalMedium}</p>
                             <div className='analytics-cross-container'>
                                 <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
                             </div>
@@ -230,7 +258,7 @@ const Analytics = () => {
 
                         {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>10</p>
+                            <p className='analytics-checkmark-text'>{r_totalFullSize}</p>
                             <div className='analytics-cross-container'>
                                 <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
                             </div>
@@ -265,7 +293,7 @@ const Analytics = () => {
 
                         {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>2</p>
+                            <p className='analytics-checkmark-text'>{r_totalTruck1}</p>
                             <div className='analytics-cross-container'>
                                 <img className='analytics-checkmark' src='../../assets/cross.svg' alt=''/>
                             </div>
@@ -300,7 +328,7 @@ const Analytics = () => {
 
                         {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
-                            <p className='analytics-checkmark-text'>4</p>
+                            <p className='analytics-checkmark-text'>{r_totalTruck2}</p>
                             <div className='analytics-cross-container'>
                                 <img className='analytics-checkmark' src='../../assets/cross.svg' alt='cross'/>
                             </div>
