@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #today-title {
   margin-bottom: 20px;
 }
@@ -17,6 +26,7 @@
   border-radius: 5px;
   width: 30%;
   padding-left: 20px;
+  padding-right: 20px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
@@ -29,22 +39,57 @@
   margin-right: 15px;
 }
 
+#possible-profit-container {
+  height: 30%;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  margin-right: 30px;
+
+  font-size: 54px;
+}
+
 #daily-customers-rejected {
   background-color: rgb(148, 148, 148, 0.5);
   border-radius: 5px;
   width: 30%;
   padding-left: 20px;
+  padding-right: 20px;
   margin-right: 15px;
 }
 
 #progress-bar {
   border: 2px solid black;
+  height: 30px;
+  margin-right: 30px;
 }
 
 #progress-bar-inside {
   height: 100%;
-  width: 20%;
   background-color: #3c6dff;
+  width: 0%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#served {
+  display: flex;
+  justify-content: center;
+  font-size: 54px;
+  margin-top: 15%;
+  
+  animation: fadeIn 1s ease;
+}
+
+#rejected {
+  display: flex;
+  justify-content: center;
+  font-size: 54px;
+  margin-top: 20%;
+  
+  animation: fadeIn 1s ease;
 }
 
 .done-button {
@@ -52,10 +97,17 @@
   font-family: 'Poppins';
   height: 20%;
   border-radius: 5px;
+  
+  transition: all 0.25s;
 }
 
 .done-button:hover {
   cursor: pointer;
+  background-color: lightgrey;
+}
+
+.done-button:active {
+  transform: scale(0.9)
 }
 
 .dashboard-row {
