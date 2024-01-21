@@ -175,7 +175,12 @@
 }
 
 .analytics-car {
-  margin: 5px 0 5px 0;
+  border-bottom: 2px rgb(128, 128, 128, 0.25) solid;
+  background-color: rgb(212, 212, 212, 0.25);
+  /* fix */
+  margin-left: -50px;
+  padding-left: 30px;
+  
 }
 
 .analytics-car-name {
@@ -186,5 +191,5 @@
 .analytics-main-container {
   margin-left: 15vw;
   padding-left: 2vw;
-  height: 240vh;
+  height: 100%;
 }

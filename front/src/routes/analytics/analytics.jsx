@@ -76,7 +76,7 @@ const Analytics = () => {
                 </div>
 
                 {/* VEHICLE TYPES CONTAINER */}
-                <div className='main-container-margin'>
+                <div>
                 {/* Compact Cars */}
                     {/* Name and icon of car */}
                     <div className='flex analytics-car'>
@@ -87,7 +87,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Compact car</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>200</p>
                             <div className='analytics-checkmark-container'>
@@ -95,7 +95,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>12</p>
                             <div className='analytics-cross-container'>
@@ -122,7 +122,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Medium car</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>79</p>
                             <div className='analytics-checkmark-container'>
@@ -130,7 +130,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>12</p>
                             <div className='analytics-cross-container'>
@@ -157,7 +157,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Full-size car</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>2</p>
                             <div className='analytics-checkmark-container'>
@@ -165,7 +165,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>10</p>
                             <div className='analytics-cross-container'>
@@ -192,7 +192,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Class 1 Truck</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>9</p>
                             <div className='analytics-checkmark-container'>
@@ -200,7 +200,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>2</p>
                             <div className='analytics-cross-container'>
@@ -227,7 +227,7 @@ const Analytics = () => {
                             <p className='analytics-car-name'>Class 2 Truck</p>
                         </div>
 
-                        {/* Amount of overall revenue */}
+                        {/* Amount of customers accepted */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>10</p>
                             <div className='analytics-checkmark-container'>
@@ -235,7 +235,7 @@ const Analytics = () => {
                             </div>
                         </div>
 
-                        {/* Amount of revenue loss */}
+                        {/* Amount of customers refused */}
                         <div className='analytics-car-item'>
                             <p className='analytics-checkmark-text'>4</p>
                             <div className='analytics-cross-container'>
