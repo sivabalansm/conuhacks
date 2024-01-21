@@ -90,6 +90,7 @@ h2 {
 
 .sidebar-title {
   margin-top: 0px;
+  padding-bottom: 10px;
   font-size: 21px;
   display: flex;
   align-items: center;
@@ -110,6 +111,18 @@ h2 {
   font-weight: bolder;
   margin: 30px 30% 40px 30%;
   opacity: 0.5;
+}
+
+.indented-divider2 {
+  display: flex;
+  border: 1px solid lightgrey;
+  margin: 0;
+  justify-content: center;
+  font-weight: bolder;
+  opacity: 0.5;
+  margin-left: 15px;
+  margin-right: 25px;
+  margin-bottom: 20px;
 }
 
 .sidebar {
@@ -140,6 +153,10 @@ h2 {
 
 .sidebar-item:hover {
   background-color: rgb(115, 115, 115);
+}
+
+.side-bar-item:active {
+  background-color: rgb(45, 45, 45);
 }
 
 /* SIDEBAR END */
