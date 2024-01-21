@@ -1,17 +1,26 @@
 #daily-upcoming-schedules {
+  background-color: #3c6dff;
   width:70%;
+  padding-left: 20px;
+  margin-right: 20px;
 }
 
 #daily-customers-done-ratio {
   width: 30%;
+  padding-left: 20px;
+  margin-right: 20px;
 }
 
 #daily-possible-profit {
-  width: 70%;
+  width:70%;
+  padding-left: 20px;
+  margin-right: 20px;
 }
 
 #daily-customers-rejected {
   width: 30%;
+  padding-left: 20px;
+  margin-right: 20px;
 }
 
 .dashboard-row {
@@ -26,4 +35,11 @@
   height: 100%;
   width: 20%;
   background-color: #3c6dff;
+}
+
+.dashboard-main-container {
+  margin-left: 15vw;
+  padding-left:0;
+  height: 100vh;
+
 }

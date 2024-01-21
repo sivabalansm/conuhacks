@@ -3,12 +3,18 @@ import '../../global.css'
 import './dashboard.css'
 import { useState, useEffect } from 'react'
 
-const [served, setServed] = useState(0)
-const [earned, setEarned] = useState(0)
-const [tempdata, setTempData] = useState({})
-setTempData({})
-
 const Dashboard = () => {
+    const [served, setServed] = useState(0)
+    const [toserve, setToServer] = useState(47) // fake data
+    const [earned, setEarned] = useState(0)
+    const [tempdata, setTempData] = useState({})
+
+    const handleDone = () => {
+        console.log('Done button pressed')
+        let tempserved = served + 1
+        setServed(tempserved)
+    }
+
     return (
         <>
             <div className = 'sidebar'>
@@ -33,17 +39,20 @@ const Dashboard = () => {
                 <div className='dashboard-row'>
                     <div id='daily-upcoming-schedules'>
                         {/* Plug-in upcoming schedules as a list of items */}
-                        Daily Upcoming Schedules
+                        <h2>Daily Upcoming Schedules</h2>
+                        <div>
+                            <p>placeholder <button onClick={handleDone}>done</button></p>
+                        </div>
                     </div>
                     <div id='daily-customers-done-ratio'>
                         <h2>Customers Served</h2>
-                        <p>{}0 / 47</p>
+                        <p>{served} / {toserve}</p>
                     </div>
                 </div>
                 <div className='dashboard-row'>
                     <div id='daily-possible-profit'>
                         {/* Plug-in possible daily profit */}
-                        Daily Possible Profit
+                        <h2>Daily Possible Profit</h2>
                         <div>
                             {}0 / 2356$
                         </div>
@@ -55,7 +64,7 @@ const Dashboard = () => {
                     </div>
                     <div id='daily-customers-rejected'>
                         {/* Plug-in daily customers rejected */}
-                        Daily Customers Rejected
+                        <h2>Daily Customers Rejected</h2>
                     </div>
                 </div>
             </div>
