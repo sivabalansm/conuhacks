@@ -13,7 +13,7 @@ accent: #d79435
 
 error: #DB3E3E
 
-success: #30DF45
+success: #30DF45 or #3bba4a(darker, for icons)
 
 
 # Sidebar colors, or dark mode

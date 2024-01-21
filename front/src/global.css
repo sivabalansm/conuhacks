@@ -21,6 +21,24 @@ h1 {
   font-size: 12px;
 }
 
+.flex {
+  display: flex;
+}
+
+/* Widths */
+
+.width50 {
+  width: 50%;
+}
+
+.width22-5 {
+  width: 22.5%;
+}
+
+.width10 {
+  width: 10%;
+}
+
 /* SIDEBAR */
 
 #logo {
@@ -69,10 +87,14 @@ h1 {
   height: 100vh;
 }
 
+.main-container-margin {
+  margin: 2vh 1vw 2vh 0px;
+}
+
 .main-container {
   margin-left: 13vw;
   padding-left: 1vw;
-  height: 100vh;
+  height: 200vh;
 }
 
 .main-container-title {

@@ -1,0 +1,25 @@
+#total-revenue {
+  height: 30vh
+}
+
+#walkins {
+  height: 20vh;
+}
+
+#reservations {
+  
+}
+
+#most-profitable-vehicle {
+  height: 20vh;
+}
+
+#least-profitable-vehicle {
+  
+}
+
+
+
+.analytics-car {
+  margin: 5px 0 5px 0;
+}
