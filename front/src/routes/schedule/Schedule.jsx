@@ -31,7 +31,7 @@ const Schedule = () => {
       const newDay = String(date.getUTCDate()).padStart(2, '0')
 
       const response = await reservationServices.getFromDate(`${newYear}-${newMonth}-${newDay}`)
-      const initialCars = response[0].reservations
+      const initialCars = response[0].reservations.filter(reservation => !reservation.reject)
 
       setCars(initialCars)
     }
