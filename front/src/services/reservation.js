@@ -7,7 +7,7 @@ const getAll = async () => {
 }
 
 const getFromDate = async (date) => {
-    const dateUrl = `api/date/${date}`
+    const dateUrl = `/api/date/${date}`
     const response = await axios.get(dateUrl)
     return response.data
 }
