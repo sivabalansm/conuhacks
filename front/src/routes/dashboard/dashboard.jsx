@@ -6,11 +6,7 @@ import reservationServices from '../../services/reservation'
 
 const Dashboard = () => {
     const [served, setServed] = useState(0)
-    const [toServe, setToServe] = useState(0) // fake data
     const [earned, setEarned] = useState(0)
-    const [toearn, setToEarn] = useState(999) // fake data
-    const [data, setData] = useState({})
-    const [cars, setCars] = useState({})
     const [width, setWidth] = useState(0)
     const date = new Date('2022-10-01')
     const actualDate = new Date()
@@ -30,6 +26,7 @@ const Dashboard = () => {
     const [reservations, setReservations] = useState([])
     const [totalRevenue, setTotalRevenue] = useState(0)
     const [rejects, setRejects] = useState([])
+    const [fake_r, setFake_r] = useState([])
 
 
     useEffect(() => {
@@ -56,6 +53,15 @@ const Dashboard = () => {
                 })
 
                 setTotalRevenue(newTotalRevenue)
+                let sort_r = reservations.toSorted((r1, r2) => {
+                    const [h1, m1] = r1.time.split(':')
+                    const [h2, m2] = r2.time.split(':')
+                    const t1 = Number(h1) * 60 + Number(m1)
+                    const t2 = Number(h2) * 60 + Number(m2)
+                    return t1 - t2
+                })                
+
+                setFake_r(sort_r)
             }
             if (!reservations) {
                 return null
@@ -65,16 +71,15 @@ const Dashboard = () => {
             
         }, [reservations])
 
-    const handleDone = () => {
-        console.log('Done button pressed')
+    const handleDone = (e) => {
+        const [id, profit] = e.target.id.split('-')
         let tempServed = served + 1
-        let fakeAppointmentRevenue = 300
-        let tempEarned = earned + fakeAppointmentRevenue
-        let ratio = (tempEarned/toearn)*100
+        let tempEarned = earned + Number(profit)
+        let ratio = (tempEarned / totalRevenue) * 100
         let tempWidth = ratio // value may change depending on money
 
         // Locks progress bar at 100
-        if (ratio > 100) {
+        if (ratio >= 100) {
             tempWidth = 100
             progressBar.style.backgroundColor = '#3bba4a'
         }
@@ -82,9 +87,9 @@ const Dashboard = () => {
         setServed(tempServed)
         setEarned(tempEarned)
         setWidth(tempWidth)
+        setFake_r(fake_r.filter(r => r.id !== id))
 
         progressBar.style.width = tempWidth + '%'
-        
     }
 
     return (
@@ -122,11 +127,11 @@ const Dashboard = () => {
                                     <button className='done-button' onClick={handleDone}>done</button>
                                 </div>
                             })} */}
-                            {reservations.slice(0, 5).map((car) => {
+                            {fake_r.slice(0, 5).map((car) => {
                                 return (
                                     <div className='schedule-item'>
-                                        <p>{car.type} {profit[car.type]}$ {car.time}</p>
-                                        <button className='done-button' onClick={handleDone}>done</button>
+                                        <p>{car.type} {profit[car.type]}$ {car.time.split(':').map(t => t.padStart(2, '0')).join(':')}</p>
+                                        <button className='done-button' onClick={handleDone} id={[car.id, profit[car.type]].join('-')}>done</button>
                                     </div>
                                 )
                             })
@@ -144,7 +149,7 @@ const Dashboard = () => {
                         <h2>Daily Possible Profit</h2>
                         {/* Plug-in possible daily profit */}
                         <div id='possible-profit-container'>
-                            {earned} / {toearn}$
+                            {earned} / {totalRevenue}$
                         </div>
                         <div id='progress-bar'>
                             {/* Enter percentage progress bar earned */}
